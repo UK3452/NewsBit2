@@ -1,0 +1,38 @@
+[
+    {
+        "merged": "C:\\Users\\Shivam\\Desktop\\NewsBit-master\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_source_news.xml",
+        "source": "C:\\Users\\Shivam\\Desktop\\NewsBit-master\\app\\src\\main\\res\\layout\\fragment_source_news.xml"
+    },
+    {
+        "merged": "C:\\Users\\Shivam\\Desktop\\NewsBit-master\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\item_category.xml",
+        "source": "C:\\Users\\Shivam\\Desktop\\NewsBit-master\\app\\src\\main\\res\\layout\\item_category.xml"
+    },
+    {
+        "merged": "C:\\Users\\Shivam\\Desktop\\NewsBit-master\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_main.xml",
+        "source": "C:\\Users\\Shivam\\Desktop\\NewsBit-master\\app\\src\\main\\res\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\Shivam\\Desktop\\NewsBit-master\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_article.xml",
+        "source": "C:\\Users\\Shivam\\Desktop\\NewsBit-master\\app\\src\\main\\res\\layout\\fragment_article.xml"
+    },
+    {
+        "merged": "C:\\Users\\Shivam\\Desktop\\NewsBit-master\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\item_news.xml",
+        "source": "C:\\Users\\Shivam\\Desktop\\NewsBit-master\\app\\src\\main\\res\\layout\\item_news.xml"
+    },
+    {
+        "merged": "C:\\Users\\Shivam\\Desktop\\NewsBit-master\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_category_news.xml",
+        "source": "C:\\Users\\Shivam\\Desktop\\NewsBit-master\\app\\src\\main\\res\\layout\\fragment_category_news.xml"
+    },
+    {
+        "merged": "C:\\Users\\Shivam\\Desktop\\NewsBit-master\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_explore.xml",
+        "source": "C:\\Users\\Shivam\\Desktop\\NewsBit-master\\app\\src\\main\\res\\layout\\fragment_explore.xml"
+    },
+    {
+        "merged": "C:\\Users\\Shivam\\Desktop\\NewsBit-master\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_top_news.xml",
+        "source": "C:\\Users\\Shivam\\Desktop\\NewsBit-master\\app\\src\\main\\res\\layout\\fragment_top_news.xml"
+    },
+    {
+        "merged": "C:\\Users\\Shivam\\Desktop\\NewsBit-master\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_bookmark.xml",
+        "source": "C:\\Users\\Shivam\\Desktop\\NewsBit-master\\app\\src\\main\\res\\layout\\fragment_bookmark.xml"
+    }
+]
