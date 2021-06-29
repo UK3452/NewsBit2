@@ -5,6 +5,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.lifecycle.Observer
 import com.example.android.newsbit.R
 import com.example.android.newsbit.adapters.NewsAdapter
@@ -66,8 +67,15 @@ class BookmarkFragment : Fragment(R.layout.fragment_bookmark) {
             attachToRecyclerView(bookmarkedNewsItemView)
         }
 
+        var bookmarkFound : ConstraintLayout = view.findViewById(R.id.bookmark_notfound)
 
         viewModel.getSavedNews().observe(viewLifecycleOwner, Observer { articles ->
+            if(articles.isEmpty()){
+                bookmarkFound.visibility = View.VISIBLE
+            }
+            else{
+                bookmarkFound.visibility = View.GONE
+            }
             newsAdapter.differ.submitList(articles)
         })
     }
