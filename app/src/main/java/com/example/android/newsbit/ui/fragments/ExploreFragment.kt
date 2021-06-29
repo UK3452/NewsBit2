@@ -1,11 +1,14 @@
 package com.example.android.newsbit.ui.fragments
 
+import android.content.Context
+import android.content.Context.MODE_PRIVATE
+import android.content.SharedPreferences
 import android.os.Bundle
 import android.util.Log
-import androidx.fragment.app.Fragment
 import android.view.View
 import android.widget.*
 import androidx.activity.OnBackPressedCallback
+import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.GridLayoutManager
@@ -13,7 +16,6 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.android.newsbit.R
 import com.example.android.newsbit.adapters.CategoryAdapter
-import com.example.android.newsbit.adapters.NewsAdapter
 import com.example.android.newsbit.adapters.NewsSourceAdapter
 import com.example.android.newsbit.adapters.SearchNewsAdapter
 import com.example.android.newsbit.models.Category
@@ -21,6 +23,9 @@ import com.example.android.newsbit.models.NewsSource
 import com.example.android.newsbit.ui.MainActivity
 import com.example.android.newsbit.ui.NewsViewModel
 import com.example.android.newsbit.utils.Resource
+import com.google.gson.Gson
+import com.google.gson.reflect.TypeToken
+import java.lang.reflect.Type
 import java.util.*
 
 
@@ -41,6 +46,8 @@ class ExploreFragment : Fragment(R.layout.fragment_explore) {
 
     lateinit var bottom_section: LinearLayout
 
+    lateinit var sharedPreferences: SharedPreferences
+
     var totalResults = 0 // totalResults will be received in news search later
     var isLoading = false
     var isScrolling = false
@@ -59,24 +66,57 @@ class ExploreFragment : Fragment(R.layout.fragment_explore) {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         viewModel = (activity as MainActivity).viewModel
-        categories = mutableListOf(
-            Category("Business", R.drawable.business,false),
-            Category("Covid", R.drawable.covid,true),
-            Category("Entertainment", R.drawable.entertainment,false),
-            Category("Health", R.drawable.health,false),
-            Category("International", R.drawable.international,true),
-            Category("Politics", R.drawable.politics,true),
-            Category("Science", R.drawable.science,false),
-            Category("Sports", R.drawable.sports,false),
-            Category("Technology", R.drawable.technology,false)
-        )
+        if(isCategoryPrefExist()){
+            retrievePreferenceCategory()
+        }
+        else{
+            categories = mutableListOf(
+                Category("Business", R.drawable.business,false),
+                Category("Covid", R.drawable.covid,true),
+                Category("Entertainment", R.drawable.entertainment,false),
+                Category("Health", R.drawable.health,false),
+                Category("International", R.drawable.international,true),
+                Category("Politics", R.drawable.politics,true),
+                Category("Science", R.drawable.science,false),
+                Category("Sports", R.drawable.sports,false),
+                Category("Technology", R.drawable.technology,false)
+            )
+            savePereferenceCategory()
+        }
 
         newsSources  = mutableListOf(
             NewsSource("bbc-news","BBC",R.drawable.sports),
             NewsSource("the-hindu","The Hindu",R.drawable.the_hindu),
             NewsSource("the-times-of-india","Times Of India",R.drawable.technology)
         )
+    }
 
+
+    private fun savePereferenceCategory() {
+        sharedPreferences = requireContext().getSharedPreferences("objectPref", Context.MODE_PRIVATE)
+        val editor: SharedPreferences.Editor = sharedPreferences!!.edit()
+
+        val cat: List<Category> = categories
+        val connectionsJSONString = Gson().toJson(cat)
+        editor.putString("CategoriesObject", connectionsJSONString)
+        editor.putBoolean("categoryIsPresent",true)
+        editor.commit()
+        Log.e("SAVED-->",connectionsJSONString)
+    }
+
+    private fun retrievePreferenceCategory() {
+        sharedPreferences = requireContext().getSharedPreferences("objectPref", Context.MODE_PRIVATE)
+        val categoryStringJSON: String? = sharedPreferences.getString("CategoriesObject", null)
+        val type: Type = object : TypeToken<List<Category?>?>() {}.type
+        val catList: List<Category> =
+            Gson().fromJson<List<Category>>(categoryStringJSON, type)
+        categories = catList as MutableList<Category>
+        Log.e("RETRIEVED-->",categories.toString())
+    }
+
+    private fun isCategoryPrefExist() : Boolean{
+        sharedPreferences = requireContext().getSharedPreferences("objectPref", Context.MODE_PRIVATE)
+        return sharedPreferences.getBoolean("categoryIsPresent", false)
     }
 
     /*https://stackoverflow.com/questions/14678593/the-application-may-be-doing-too-much-work-on-

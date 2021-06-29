@@ -1223,9 +1223,6 @@ int color primary_text_default_material_dark 0x7f0500cc
 int color primary_text_default_material_light 0x7f0500cd
 int color primary_text_disabled_material_dark 0x7f0500ce
 int color primary_text_disabled_material_light 0x7f0500cf
-int color purple_200 0x7f0500d0
-int color purple_500 0x7f0500d1
-int color purple_700 0x7f0500d2
 int color radiobutton_themeable_attribute_color 0x7f0500d3
 int color ripple_material_dark 0x7f0500d4
 int color ripple_material_light 0x7f0500d5
@@ -1241,8 +1238,6 @@ int color switch_thumb_material_dark 0x7f0500de
 int color switch_thumb_material_light 0x7f0500df
 int color switch_thumb_normal_material_dark 0x7f0500e0
 int color switch_thumb_normal_material_light 0x7f0500e1
-int color teal_200 0x7f0500e2
-int color teal_700 0x7f0500e3
 int color test_mtrl_calendar_day 0x7f0500e4
 int color test_mtrl_calendar_day_selected 0x7f0500e5
 int color tooltip_background_dark 0x7f0500e6
