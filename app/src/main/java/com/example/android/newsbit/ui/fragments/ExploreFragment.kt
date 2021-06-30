@@ -2,11 +2,13 @@ package com.example.android.newsbit.ui.fragments
 
 import android.content.Context
 import android.content.SharedPreferences
+import android.opengl.Visibility
 import android.os.Bundle
 import android.util.Log
 import android.view.View
 import android.widget.*
 import androidx.activity.OnBackPressedCallback
+import androidx.core.view.isVisible
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.navigation.fragment.findNavController
@@ -15,13 +17,14 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.android.newsbit.R
 import com.example.android.newsbit.adapters.CategoryAdapter
+import com.example.android.newsbit.adapters.NewsAdapter
 import com.example.android.newsbit.adapters.NewsSourceAdapter
-import com.example.android.newsbit.adapters.SearchNewsAdapter
 import com.example.android.newsbit.models.Category
 import com.example.android.newsbit.models.NewsSource
 import com.example.android.newsbit.ui.MainActivity
 import com.example.android.newsbit.ui.NewsViewModel
 import com.example.android.newsbit.utils.Resource
+import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
 import java.lang.reflect.Type
@@ -38,7 +41,7 @@ class ExploreFragment : Fragment(R.layout.fragment_explore) {
 
     //SEARCH KEYWORDSS VARIABLES
     lateinit var searchKeyword: String
-    lateinit var searchNewsAdapter: SearchNewsAdapter
+    lateinit var searchNewsAdapter: NewsAdapter
     lateinit var searchItemView: RecyclerView
     lateinit var paginationProgressBarView: ProgressBar
     var searchNewsPageTemp = 1
@@ -51,6 +54,7 @@ class ExploreFragment : Fragment(R.layout.fragment_explore) {
     var isLoading = false
     var isScrolling = false
 
+    lateinit var navBar: BottomNavigationView
 
     var categories: MutableList<Category> = mutableListOf()
     var newsSources: MutableList<NewsSource> = mutableListOf()
@@ -136,7 +140,14 @@ class ExploreFragment : Fragment(R.layout.fragment_explore) {
         ///
         ///SEARCH VIEW COMPONENT
         val search = view.findViewById<SearchView>(R.id.search_view)
+
+        search.setOnSearchClickListener {
+            navBar = view.findViewById(R.id.bottomNavigationView)
+            navBar.visibility=View.GONE
+        }
+
         search.setOnQueryTextListener(object : SearchView.OnQueryTextListener {
+
             override fun onQueryTextSubmit(p0: String?): Boolean {
                 search.clearFocus()
                 if (p0 != null) {
@@ -162,36 +173,29 @@ class ExploreFragment : Fragment(R.layout.fragment_explore) {
             .onBackPressedDispatcher
             .addCallback(viewLifecycleOwner, object : OnBackPressedCallback(true) {
                 override fun handleOnBackPressed() {
-
-//                    Toast.makeText(view.context,"BACK PRESSED",Toast.LENGTH_SHORT).show()
                     // Do custom work here
-                    if (!search.isFocused) {
-                        if (c == 0) {
+                        if (!bottom_section.isVisible) {
                             searchItemView.visibility = View.GONE
                             bottom_section.visibility = View.VISIBLE
                             search.setQuery("", true)
-                            c = 1
                         } else {
                             if (isEnabled) {
                                 isEnabled = false
                                 requireActivity().onBackPressed()
-                                c = 0
                             }
                         }
-                    }
                     search.clearFocus()
                 }
-            }
-            )
+            })
 
         search.setOnCloseListener(object : SearchView.OnCloseListener {
             override fun onClose(): Boolean {
                 searchKeyword = ""
                 searchItemView.visibility = View.GONE
                 bottom_section.visibility = View.VISIBLE
+                navBar.visibility=View.VISIBLE
                 return false
             }
-
         })
 
         paginationProgressBarView = view.findViewById(R.id.progress_bar_search)
@@ -337,7 +341,7 @@ class ExploreFragment : Fragment(R.layout.fragment_explore) {
 
 
     private fun searchNewsRecyclerView() {
-        searchNewsAdapter = SearchNewsAdapter()
+        searchNewsAdapter = NewsAdapter()
         searchItemView.apply {
             adapter = searchNewsAdapter
             layoutManager = LinearLayoutManager(activity)

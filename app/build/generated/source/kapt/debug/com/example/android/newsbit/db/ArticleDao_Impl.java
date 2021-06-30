@@ -114,7 +114,7 @@ public final class ArticleDao_Impl implements ArticleDao {
   }
 
   @Override
-  public Object upsert(final Article article, final Continuation<? super Long> arg1) {
+  public Object upsert(final Article article, final Continuation<? super Long> p1) {
     return CoroutinesRoom.execute(__db, true, new Callable<Long>() {
       @Override
       public Long call() throws Exception {
@@ -127,11 +127,11 @@ public final class ArticleDao_Impl implements ArticleDao {
           __db.endTransaction();
         }
       }
-    }, arg1);
+    }, p1);
   }
 
   @Override
-  public Object deleteArticle(final Article article, final Continuation<? super Unit> arg1) {
+  public Object deleteArticle(final Article article, final Continuation<? super Unit> p1) {
     return CoroutinesRoom.execute(__db, true, new Callable<Unit>() {
       @Override
       public Unit call() throws Exception {
@@ -144,7 +144,7 @@ public final class ArticleDao_Impl implements ArticleDao {
           __db.endTransaction();
         }
       }
-    }, arg1);
+    }, p1);
   }
 
   @Override

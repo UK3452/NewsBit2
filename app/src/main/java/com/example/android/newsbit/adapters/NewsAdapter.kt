@@ -81,6 +81,7 @@ class NewsAdapter() : RecyclerView.Adapter<NewsAdapter.NewsViewHolder>() {
             else
                 holder.imageView.setImageResource(R.drawable.news_app_icon)
 
+
             holder.itemView.setOnClickListener {
                 onItemClickListener?.let {
                     it(currentItem)
@@ -92,7 +93,6 @@ class NewsAdapter() : RecyclerView.Adapter<NewsAdapter.NewsViewHolder>() {
                     it(currentItem)
                 }
             }
-
         }
     }
 
@@ -103,8 +103,4 @@ class NewsAdapter() : RecyclerView.Adapter<NewsAdapter.NewsViewHolder>() {
     fun setOnBookmarkClickListener(listener: (Article) -> Unit) {
         onBookmarkClickListener = listener
     }
-
 }
-
-
-
