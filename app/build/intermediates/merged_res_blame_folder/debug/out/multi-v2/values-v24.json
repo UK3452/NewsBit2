@@ -4,7 +4,7 @@
             "outputFile": "C:\\Users\\Shivam\\Desktop\\NewsBit-master\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v24\\values-v24.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Shivam\\.gradle\\caches\\transforms-2\\files-2.1\\32bb6d96ce8c294a7e0418332086026c\\appcompat-1.3.0\\res\\values-v24\\values-v24.xml",
+                    "source": "C:\\Users\\Shivam\\.gradle\\caches\\transforms-2\\files-2.1\\d934dc26a0bf8d2814f678637ac1af6e\\appcompat-1.3.0\\res\\values-v24\\values-v24.xml",
                     "from": {
                         "startLines": "2,3",
                         "startColumns": "4,4",
@@ -14,7 +14,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Shivam\\.gradle\\caches\\transforms-2\\files-2.1\\fbf5e213d265b9ff48df63ca4012535c\\media-1.0.0\\res\\values-v24\\values-v24.xml",
+                    "source": "C:\\Users\\Shivam\\.gradle\\caches\\transforms-2\\files-2.1\\0b7b00061c1f56b4716baff2e8652786\\media-1.0.0\\res\\values-v24\\values-v24.xml",
                     "from": {
                         "startLines": "2,3,4,5",
                         "startColumns": "4,4,4,4",

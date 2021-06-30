@@ -30,6 +30,7 @@ public final class CategoryNewsFragment extends androidx.fragment.app.Fragment {
     private java.lang.String from;
     @org.jetbrains.annotations.NotNull()
     private final androidx.recyclerview.widget.RecyclerView.OnScrollListener categoryNewsScrollListener = null;
+    private java.util.HashMap _$_findViewCache;
     
     public CategoryNewsFragment() {
         super();

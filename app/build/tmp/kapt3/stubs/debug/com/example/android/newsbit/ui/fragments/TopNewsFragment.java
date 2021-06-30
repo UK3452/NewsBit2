@@ -16,6 +16,7 @@ public final class TopNewsFragment extends androidx.fragment.app.Fragment {
     private int topNewsPageTemp = 1;
     @org.jetbrains.annotations.NotNull()
     private final androidx.recyclerview.widget.RecyclerView.OnScrollListener newsScrollListener = null;
+    private java.util.HashMap _$_findViewCache;
     
     public TopNewsFragment() {
         super();

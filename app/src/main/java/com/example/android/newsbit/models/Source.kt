@@ -3,8 +3,8 @@ package com.example.android.newsbit.models
 import java.io.Serializable
 
 data class Source(
-    val id: Any,
-    val name: String
+    val id: Any?,
+    val name: String?
 ): Serializable
 
 /*

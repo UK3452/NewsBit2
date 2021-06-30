@@ -7,6 +7,7 @@ public final class ArticleFragment extends androidx.fragment.app.Fragment {
     public com.example.android.newsbit.ui.NewsViewModel viewModel;
     @org.jetbrains.annotations.NotNull()
     private final androidx.navigation.NavArgsLazy articleArgs$delegate = null;
+    private java.util.HashMap _$_findViewCache;
     
     public ArticleFragment() {
         super();

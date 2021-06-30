@@ -92,6 +92,10 @@
         "source": "C:\\Users\\Shivam\\Desktop\\NewsBit-master\\app\\src\\main\\res\\layout\\fragment_top_news.xml"
     },
     {
+        "merged": "C:\\Users\\Shivam\\Desktop\\NewsBit-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable_explore_bg.xml.flat",
+        "source": "C:\\Users\\Shivam\\Desktop\\NewsBit-master\\app\\src\\main\\res\\drawable\\explore_bg.xml"
+    },
+    {
         "merged": "C:\\Users\\Shivam\\Desktop\\NewsBit-master\\app\\build\\intermediates\\res\\merged\\debug\\navigation_news_nav_graph.xml.flat",
         "source": "C:\\Users\\Shivam\\Desktop\\NewsBit-master\\app\\src\\main\\res\\navigation\\news_nav_graph.xml"
     },
@@ -236,6 +240,10 @@
         "source": "C:\\Users\\Shivam\\Desktop\\NewsBit-master\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
     },
     {
+        "merged": "C:\\Users\\Shivam\\Desktop\\NewsBit-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_briefcase.png.flat",
+        "source": "C:\\Users\\Shivam\\Desktop\\NewsBit-master\\app\\src\\main\\res\\drawable-v24\\briefcase.png"
+    },
+    {
         "merged": "C:\\Users\\Shivam\\Desktop\\NewsBit-master\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher_round.png.flat",
         "source": "C:\\Users\\Shivam\\Desktop\\NewsBit-master\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.png"
     },
@@ -274,6 +282,10 @@
     {
         "merged": "C:\\Users\\Shivam\\Desktop\\NewsBit-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_baseline_explore_24.xml.flat",
         "source": "C:\\Users\\Shivam\\Desktop\\NewsBit-master\\app\\src\\main\\res\\drawable\\ic_baseline_explore_24.xml"
+    },
+    {
+        "merged": "C:\\Users\\Shivam\\Desktop\\NewsBit-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_global.png.flat",
+        "source": "C:\\Users\\Shivam\\Desktop\\NewsBit-master\\app\\src\\main\\res\\drawable-v24\\global.png"
     },
     {
         "merged": "C:\\Users\\Shivam\\Desktop\\NewsBit-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_ic_launcher_foreground.png.flat",
