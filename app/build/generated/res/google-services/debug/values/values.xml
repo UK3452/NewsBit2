@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">296181411352-j4mlmj94sqc8cnohud69piknmci4198u.apps.googleusercontent.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">296181411352</string>
+    <string name="google_api_key" translatable="false">AIzaSyDJzoICFX8_hP9gTVWv20aCPQP25jxQDco</string>
+    <string name="google_app_id" translatable="false">1:296181411352:android:92ccd9f5296b6e2d9a5d6d</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyDJzoICFX8_hP9gTVWv20aCPQP25jxQDco</string>
+    <string name="google_storage_bucket" translatable="false">newsbitts.appspot.com</string>
+    <string name="project_id" translatable="false">newsbitts</string>
+</resources>
