@@ -7,6 +7,7 @@ public final class BookmarkFragment extends androidx.fragment.app.Fragment {
     public com.example.android.newsbit.ui.NewsViewModel viewModel;
     public com.example.android.newsbit.adapters.NewsAdapter newsAdapter;
     public androidx.recyclerview.widget.RecyclerView bookmarkedNewsItemView;
+    private java.util.HashMap _$_findViewCache;
     
     public BookmarkFragment() {
         super();

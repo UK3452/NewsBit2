@@ -28,6 +28,7 @@ public final class SourceNewsFragment extends androidx.fragment.app.Fragment {
     private java.lang.String from;
     @org.jetbrains.annotations.NotNull()
     private final androidx.recyclerview.widget.RecyclerView.OnScrollListener sourceNewsScrollListener = null;
+    private java.util.HashMap _$_findViewCache;
     
     public SourceNewsFragment() {
         super();

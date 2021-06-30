@@ -10,7 +10,7 @@ class Converters {
     convert custom types to and from known types that Room can persist. */
 
     @TypeConverter
-    fun fromSource(source: Source): String {
+    fun fromSource(source: Source): String? {
         //save only source name. I will not display source id because it is unnecessary
         return source.name
     }

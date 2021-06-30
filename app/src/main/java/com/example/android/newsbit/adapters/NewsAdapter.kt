@@ -76,7 +76,10 @@ class NewsAdapter() : RecyclerView.Adapter<NewsAdapter.NewsViewHolder>() {
             holder.descriptionView.text = currentItem.description
             holder.sourceView.text = currentItem.source.name
 
-            Glide.with(holder.itemView.context).load(currentItem.urlToImage).into(holder.imageView)
+            if(currentItem.urlToImage!=null)
+                Glide.with(holder.itemView.context).load(currentItem.urlToImage).into(holder.imageView)
+            else
+                holder.imageView.setImageResource(R.drawable.news_app_icon)
 
             holder.itemView.setOnClickListener {
                 onItemClickListener?.let {
@@ -100,7 +103,6 @@ class NewsAdapter() : RecyclerView.Adapter<NewsAdapter.NewsViewHolder>() {
     fun setOnBookmarkClickListener(listener: (Article) -> Unit) {
         onBookmarkClickListener = listener
     }
-
 
 }
 

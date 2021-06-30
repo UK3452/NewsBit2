@@ -1729,6 +1729,7 @@ drawable avd_show_password
 drawable bookmark
 drawable bookmark_icon
 drawable bottom_navigation_selector
+drawable briefcase
 drawable btn_checkbox_checked_mtrl
 drawable btn_checkbox_checked_to_unchecked_mtrl_animation
 drawable btn_checkbox_unchecked_mtrl
@@ -1767,6 +1768,7 @@ drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
 drawable entertainment
+drawable explore_bg
 drawable flag_afghanistan
 drawable flag_aland_islands
 drawable flag_albania
@@ -2013,6 +2015,7 @@ drawable flag_wallis_and_futuna
 drawable flag_yemen
 drawable flag_zambia
 drawable flag_zimbabwe
+drawable global
 drawable google
 drawable googleg_disabled_color_18
 drawable googleg_standard_color_18
