@@ -8,27 +8,11 @@
     tools:context=".ui.fragments.ArticleFragment"
     android:background="#00BCD4">
 
-    <TextView
-        android:id="@+id/newsBit"
-        android:layout_width="0dp"
-        android:layout_height="40dp"
-        android:background="@color/white"
-        android:gravity="center_vertical"
-        android:paddingLeft="16dp"
-        android:fontFamily="@font/overpass"
-        android:text="NEWS BIT"
-        android:textColor="?attr/colorSecondary"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/webView"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
     <WebView
         android:id="@+id/webView"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        app:layout_constraintTop_toBottomOf="@id/newsBit"
+        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -45,7 +29,7 @@
         android:layout_marginEnd="32dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:backgroundTint="#EF7268"
+        android:backgroundTint="?attr/colorPrimary"
         />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

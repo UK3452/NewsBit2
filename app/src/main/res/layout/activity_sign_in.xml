@@ -39,7 +39,7 @@
             android:visibility="gone"
             android:fontFamily="@font/overpass"
             android:textSize="16sp"
-            android:textColor="?colorSecondaryVariant"/>
+            android:textColor="#0485BF"/>
 
 <!--        <com.rilixtech.widget.countrycodepicker.CountryCodePicker-->
 <!--            android:id="@+id/ccp"-->
@@ -62,14 +62,16 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="15dp"
             android:hint="Phone Number"
+            android:elevation="2dp"
+            android:layout_marginBottom="2dp"
             android:background="@drawable/button_bg"
-            android:textColorHint="#000000"
-            app:boxStrokeColor="?attr/colorSecondary"
+            android:textColorHint="#0485BF"
+            app:boxStrokeColor="#0485BF"
             app:errorTextColor="@android:color/holo_red_dark"
             app:hintEnabled="true"
-            app:hintTextColor="#000000"
+            app:hintTextColor="#0485BF"
             app:startIconDrawable="@android:drawable/stat_sys_phone_call"
-            app:startIconTint="#000000">
+            app:startIconTint="#0485BF">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/phoneNum"
@@ -77,9 +79,8 @@
                 android:layout_height="match_parent"
                 android:fontFamily="@font/overpass"
                 android:inputType="number"
-                android:background="@drawable/button_bg"
                 android:textAlignment="textStart"
-                android:textColor="#000000"
+                android:textColor="#0485BF"
                 android:textSize="18dp" />
 
 
@@ -91,15 +92,18 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="15dp"
-            android:visibility="visible"
+            android:visibility="gone"
             android:hint="Enter 6 digit OTP"
-            android:textColorHint="#000000"
-            app:boxStrokeColor="#000000"
+            android:textColorHint="#0485BF"
+            android:background="@drawable/button_bg"
+            android:elevation="2dp"
+            android:layout_marginBottom="2dp"
+            app:boxStrokeColor="#0485BF"
             app:errorTextColor="@android:color/holo_red_dark"
             app:hintEnabled="true"
-            app:hintTextColor="#000000"
+            app:hintTextColor="#0485BF"
             app:startIconDrawable="@android:drawable/ic_lock_idle_lock"
-            app:startIconTint="#000000">
+            app:startIconTint="#0485BF">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/otp_txtNum"
@@ -108,8 +112,7 @@
                 android:fontFamily="@font/overpass"
                 android:inputType="number"
                 android:textAlignment="textStart"
-                android:textColor="#000000"
-                android:background="@drawable/button_bg"
+                android:textColor="#0485BF"
                 android:textSize="18dp" />
 
 
@@ -125,7 +128,7 @@
             android:visibility="gone"
             android:fontFamily="@font/overpass"
             android:textSize="12dp"
-            android:textColor="#000000"/>
+            android:textColor="#0485BF"/>
 
     </LinearLayout>
 
@@ -147,10 +150,11 @@
             android:layout_marginStart="40dp"
             android:layout_marginTop="8dp"
             android:layout_marginEnd="40dp"
+            android:layout_marginBottom="2dp"
             android:background="@drawable/button_bg"
             android:fontFamily="@font/overpass"
             android:text="Sign In"
-            android:textColor="#000000"
+            android:textColor="#0485BF"
             android:textSize="20sp"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
@@ -158,7 +162,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
 
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/verifyOTPBtn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -167,8 +171,9 @@
             android:layout_marginEnd="40dp"
             android:background="@drawable/button_bg"
             android:fontFamily="@font/overpass"
+            android:layout_marginBottom="2dp"
             android:text="Verify"
-            android:textColor="#000000"
+            android:textColor="#0485BF"
             android:textSize="20sp"
             android:textStyle="bold"
             android:visibility="gone" />
@@ -182,7 +187,7 @@
         android:fontFamily="@font/overpass"
         android:text="Sign In"
         android:textAllCaps="true"
-        android:textColor="#000000"
+        android:textColor="#0485BF"
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
@@ -208,9 +213,10 @@
             android:fontFamily="@font/overpass"
             android:text="Via Social Media"
             android:textAllCaps="true"
-            android:textColor="#000000"
+            android:textColor="#0485BF"
             android:textSize="18sp"
             android:textStyle="bold"
+            android:layout_marginBottom="5dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.496"
             app:layout_constraintStart_toStartOf="parent"
@@ -225,6 +231,7 @@
             <androidx.cardview.widget.CardView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_margin="5dp"
                 app:cardBackgroundColor="#FFFFFF"
                 app:cardCornerRadius="20dp">
 

@@ -64,7 +64,7 @@ public final class ActivitySignInBinding implements ViewBinding {
   public final AppCompatButton verifyBtn;
 
   @NonNull
-  public final Button verifyOTPBtn;
+  public final AppCompatButton verifyOTPBtn;
 
   private ActivitySignInBinding(@NonNull ConstraintLayout rootView, @NonNull LinearLayout buttonLl,
       @NonNull LinearLayout googleLoginBtn, @NonNull LinearLayout linearLayout,
@@ -72,7 +72,7 @@ public final class ActivitySignInBinding implements ViewBinding {
       @NonNull TextInputLayout otpTextView, @NonNull TextInputEditText otpTxtNum,
       @NonNull TextInputLayout phoneNum, @NonNull TextInputEditText phoneNum1,
       @NonNull TextView txtSlogan, @NonNull TextView txtSlogan2, @NonNull AppCompatButton verifyBtn,
-      @NonNull Button verifyOTPBtn) {
+      @NonNull AppCompatButton verifyOTPBtn) {
     this.rootView = rootView;
     this.buttonLl = buttonLl;
     this.googleLoginBtn = googleLoginBtn;
@@ -196,7 +196,7 @@ public final class ActivitySignInBinding implements ViewBinding {
       }
 
       id = R.id.verifyOTPBtn;
-      Button verifyOTPBtn = rootView.findViewById(id);
+      AppCompatButton verifyOTPBtn = rootView.findViewById(id);
       if (verifyOTPBtn == null) {
         break missingId;
       }

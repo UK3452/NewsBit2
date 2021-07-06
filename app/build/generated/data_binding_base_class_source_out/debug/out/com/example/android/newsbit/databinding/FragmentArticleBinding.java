@@ -5,7 +5,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.webkit.WebView;
-import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.constraintlayout.widget.ConstraintLayout;
@@ -24,16 +23,12 @@ public final class FragmentArticleBinding implements ViewBinding {
   public final FloatingActionButton fab;
 
   @NonNull
-  public final TextView newsBit;
-
-  @NonNull
   public final WebView webView;
 
   private FragmentArticleBinding(@NonNull ConstraintLayout rootView,
-      @NonNull FloatingActionButton fab, @NonNull TextView newsBit, @NonNull WebView webView) {
+      @NonNull FloatingActionButton fab, @NonNull WebView webView) {
     this.rootView = rootView;
     this.fab = fab;
-    this.newsBit = newsBit;
     this.webView = webView;
   }
 
@@ -70,19 +65,13 @@ public final class FragmentArticleBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.newsBit;
-      TextView newsBit = rootView.findViewById(id);
-      if (newsBit == null) {
-        break missingId;
-      }
-
       id = R.id.webView;
       WebView webView = rootView.findViewById(id);
       if (webView == null) {
         break missingId;
       }
 
-      return new FragmentArticleBinding((ConstraintLayout) rootView, fab, newsBit, webView);
+      return new FragmentArticleBinding((ConstraintLayout) rootView, fab, webView);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\Shivam\Desktop\NewsBit-master\app\src\main\AndroidManifest.xml:2:1-25:12
-INJECTED from C:\Users\Shivam\Desktop\NewsBit-master\app\src\main\AndroidManifest.xml:2:1-25:12
-INJECTED from C:\Users\Shivam\Desktop\NewsBit-master\app\src\main\AndroidManifest.xml:2:1-25:12
-INJECTED from C:\Users\Shivam\Desktop\NewsBit-master\app\src\main\AndroidManifest.xml:2:1-25:12
+ADDED from C:\Users\Shivam\Desktop\NewsBit-master\app\src\main\AndroidManifest.xml:2:1-26:12
+INJECTED from C:\Users\Shivam\Desktop\NewsBit-master\app\src\main\AndroidManifest.xml:2:1-26:12
+INJECTED from C:\Users\Shivam\Desktop\NewsBit-master\app\src\main\AndroidManifest.xml:2:1-26:12
+INJECTED from C:\Users\Shivam\Desktop\NewsBit-master\app\src\main\AndroidManifest.xml:2:1-26:12
 MERGED from [androidx.databinding:viewbinding:4.2.1] C:\Users\Shivam\.gradle\caches\transforms-2\files-2.1\4b9fc2ccdcf7deb319ea8c2bb6f83d7e\viewbinding-4.2.1\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.navigation:navigation-fragment-ktx:2.3.5] C:\Users\Shivam\.gradle\caches\transforms-2\files-2.1\4b9c11809813a3fb0c43d24a4fd2e257\navigation-fragment-ktx-2.3.5\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.fragment:fragment-ktx:1.2.4] C:\Users\Shivam\.gradle\caches\transforms-2\files-2.1\1d8517a472a026aa0116222e1ac622c8\fragment-ktx-1.2.4\AndroidManifest.xml:17:1-24:12
@@ -84,20 +84,20 @@ MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\Shivam\.gradle\c
 MERGED from [androidx.print:print:1.0.0] C:\Users\Shivam\.gradle\caches\transforms-2\files-2.1\22e575062bcccbc66b86a6d9d0865c49\print-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.annotation:annotation-experimental:1.1.0] C:\Users\Shivam\.gradle\caches\transforms-2\files-2.1\5baf5e04d57d957c01bf7928d9841ca2\annotation-experimental-1.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [io.michaelrocks:libphonenumber-android:8.12.5] C:\Users\Shivam\.gradle\caches\transforms-2\files-2.1\fde1bd630cd6f82ec18cdc0bd4634228\libphonenumber-android-8.12.5\AndroidManifest.xml:2:1-11:12
-INJECTED from C:\Users\Shivam\Desktop\NewsBit-master\app\src\main\AndroidManifest.xml:2:1-25:12
-INJECTED from C:\Users\Shivam\Desktop\NewsBit-master\app\src\main\AndroidManifest.xml:2:1-25:12
-INJECTED from C:\Users\Shivam\Desktop\NewsBit-master\app\src\main\AndroidManifest.xml:2:1-25:12
+INJECTED from C:\Users\Shivam\Desktop\NewsBit-master\app\src\main\AndroidManifest.xml:2:1-26:12
+INJECTED from C:\Users\Shivam\Desktop\NewsBit-master\app\src\main\AndroidManifest.xml:2:1-26:12
+INJECTED from C:\Users\Shivam\Desktop\NewsBit-master\app\src\main\AndroidManifest.xml:2:1-26:12
 	package
 		ADDED from C:\Users\Shivam\Desktop\NewsBit-master\app\src\main\AndroidManifest.xml:3:5-42
 		INJECTED from C:\Users\Shivam\Desktop\NewsBit-master\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\Shivam\Desktop\NewsBit-master\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from C:\Users\Shivam\Desktop\NewsBit-master\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\Shivam\Desktop\NewsBit-master\app\src\main\AndroidManifest.xml:2:1-25:12
+		ADDED from C:\Users\Shivam\Desktop\NewsBit-master\app\src\main\AndroidManifest.xml:2:1-26:12
 		INJECTED from C:\Users\Shivam\Desktop\NewsBit-master\app\src\main\AndroidManifest.xml
 	android:versionCode
 		INJECTED from C:\Users\Shivam\Desktop\NewsBit-master\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\Shivam\Desktop\NewsBit-master\app\src\main\AndroidManifest.xml:2:1-25:12
+		ADDED from C:\Users\Shivam\Desktop\NewsBit-master\app\src\main\AndroidManifest.xml:2:1-26:12
 		INJECTED from C:\Users\Shivam\Desktop\NewsBit-master\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from C:\Users\Shivam\Desktop\NewsBit-master\app\src\main\AndroidManifest.xml:2:11-69
@@ -108,7 +108,7 @@ MERGED from [com.google.firebase:firebase-auth:21.0.1] C:\Users\Shivam\.gradle\c
 	android:name
 		ADDED from C:\Users\Shivam\Desktop\NewsBit-master\app\src\main\AndroidManifest.xml:5:22-64
 application
-ADDED from C:\Users\Shivam\Desktop\NewsBit-master\app\src\main\AndroidManifest.xml:7:5-23:19
+ADDED from C:\Users\Shivam\Desktop\NewsBit-master\app\src\main\AndroidManifest.xml:7:5-24:19
 MERGED from [com.airbnb.android:lottie:3.4.0] C:\Users\Shivam\.gradle\caches\transforms-2\files-2.1\ac2a962afa71e366b7fa06471737603b\lottie-3.4.0\AndroidManifest.xml:9:5-20
 MERGED from [com.airbnb.android:lottie:3.4.0] C:\Users\Shivam\.gradle\caches\transforms-2\files-2.1\ac2a962afa71e366b7fa06471737603b\lottie-3.4.0\AndroidManifest.xml:9:5-20
 MERGED from [com.google.firebase:firebase-auth-ktx:21.0.1] C:\Users\Shivam\.gradle\caches\transforms-2\files-2.1\14b99992469ebc985f739cf637ba2b95\firebase-auth-ktx-21.0.1\AndroidManifest.xml:7:5-15:19
@@ -178,7 +178,9 @@ ADDED from C:\Users\Shivam\Desktop\NewsBit-master\app\src\main\AndroidManifest.x
 	android:name
 		ADDED from C:\Users\Shivam\Desktop\NewsBit-master\app\src\main\AndroidManifest.xml:19:27-74
 activity#com.example.android.newsbit.ui.MainActivity
-ADDED from C:\Users\Shivam\Desktop\NewsBit-master\app\src\main\AndroidManifest.xml:22:9-62
+ADDED from C:\Users\Shivam\Desktop\NewsBit-master\app\src\main\AndroidManifest.xml:22:9-23:64
+	android:windowSoftInputMode
+		ADDED from C:\Users\Shivam\Desktop\NewsBit-master\app\src\main\AndroidManifest.xml:23:13-52
 	android:name
 		ADDED from C:\Users\Shivam\Desktop\NewsBit-master\app\src\main\AndroidManifest.xml:22:19-50
 uses-sdk

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="profile">profile</string>
+    <string name="top">Top</string>
+    <string name="explore">Explore</string>
+    <string name="bookmarks">Bookmarks</string>
+    <string name="newsbit">NEWSBIT</string>
+    <string name="account">ACCOUNT</string>
+</resources>

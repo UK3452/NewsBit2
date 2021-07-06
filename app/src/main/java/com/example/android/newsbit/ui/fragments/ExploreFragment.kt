@@ -2,7 +2,6 @@ package com.example.android.newsbit.ui.fragments
 
 import android.content.Context
 import android.content.SharedPreferences
-import android.opengl.Visibility
 import android.os.Bundle
 import android.util.Log
 import android.view.View
@@ -76,22 +75,30 @@ class ExploreFragment : Fragment(R.layout.fragment_explore) {
             categories = mutableListOf(
                 Category("Business", R.drawable.briefcase, false),
                 Category("Covid", R.drawable.corona, true),
-                Category("Entertainment", R.drawable.entertainment, false),
-                Category("Health", R.drawable.health, false),
+                Category("Entertainment", R.drawable.clapperboard, false),
+                Category("Health", R.drawable.hospital, false),
                 Category("International", R.drawable.global, true),
-                Category("Politics", R.drawable.politics, true),
+                Category("Cryptocurrency", R.drawable.journalist, true),
                 Category("Science", R.drawable.science, false),
                 Category("Sports", R.drawable.sports, false),
-                Category("Technology", R.drawable.technology, false)
+                Category("Technology", R.drawable.satellite, false)
             )
 
                 savePereferenceCategory()
         }
 
         newsSources = mutableListOf(
-            NewsSource("bbc-news", "BBC", R.drawable.sports),
+            NewsSource("bbc-news", "BBC", R.drawable.bbc),
             NewsSource("the-hindu", "The Hindu", R.drawable.the_hindu),
-            NewsSource("the-times-of-india", "Times Of India", R.drawable.technology)
+            NewsSource("the-times-of-india", "Times Of India", R.drawable.times_of_india),
+//            NewsSource("engadget", "Engadget", R.drawable.technology),
+            NewsSource("espn", "ESPN", R.drawable.espn),
+            NewsSource("national-geographic", "Nat Geo", R.drawable.natgeo),
+            NewsSource("polygon", "Polygon", R.drawable.p),
+            NewsSource("techcrunch", "Tech Crunch", R.drawable.techcrunch),
+//            NewsSource("the-next-web", "NextWeb", R.drawable.technology),
+            NewsSource("the-verge", "Verge", R.drawable.v),
+            NewsSource("techradar", "Tech Radar", R.drawable.tr)
         )
     }
 
@@ -252,8 +259,8 @@ class ExploreFragment : Fragment(R.layout.fragment_explore) {
 
                 if (it.categoryName == "Covid") {
                     viewModel.getCustomCategoryNews("\"Covid\"+India", "en", from, 1)
-                } else if (it.categoryName == "Politics") {
-                    viewModel.getCustomCategoryNews("\"Politics\"+India", "en", from, 1)
+                } else if (it.categoryName == "Cryptocurency") {
+                    viewModel.getCustomCategoryNews("\"cryptocurrency\"", "en", from, 1)
                 } else if (it.categoryName == "International") {
                     viewModel.getCustomCategoryNews("International", "en", from, 1)
                 }
@@ -270,6 +277,7 @@ class ExploreFragment : Fragment(R.layout.fragment_explore) {
         }
 
         newsSourceAdapter.setOnItemClickListener {
+            viewModel.getSourceNews(it.newsSourceID,"en",from,1)
             val bundle = Bundle().apply {
                 putString("newsSourceId", it.newsSourceID)
 

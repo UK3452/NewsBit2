@@ -16,6 +16,10 @@
         "source": "C:\\Users\\Shivam\\Desktop\\NewsBit-master\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher.xml"
     },
     {
+        "merged": "C:\\Users\\Shivam\\Desktop\\NewsBit-master\\app\\build\\intermediates\\res\\merged\\debug\\menu_app_bar_menu.xml.flat",
+        "source": "C:\\Users\\Shivam\\Desktop\\NewsBit-master\\app\\src\\main\\res\\menu\\app_bar_menu.xml"
+    },
+    {
         "merged": "C:\\Users\\Shivam\\Desktop\\NewsBit-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_baseline_android_24.xml.flat",
         "source": "C:\\Users\\Shivam\\Desktop\\NewsBit-master\\app\\src\\main\\res\\drawable\\ic_baseline_android_24.xml"
     },
@@ -26,6 +30,10 @@
     {
         "merged": "C:\\Users\\Shivam\\Desktop\\NewsBit-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_covid.jpg.flat",
         "source": "C:\\Users\\Shivam\\Desktop\\NewsBit-master\\app\\src\\main\\res\\drawable-v24\\covid.jpg"
+    },
+    {
+        "merged": "C:\\Users\\Shivam\\Desktop\\NewsBit-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_satellite.png.flat",
+        "source": "C:\\Users\\Shivam\\Desktop\\NewsBit-master\\app\\src\\main\\res\\drawable-v24\\satellite.png"
     },
     {
         "merged": "C:\\Users\\Shivam\\Desktop\\NewsBit-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_launcher_foreground.png.flat",
@@ -58,6 +66,10 @@
     {
         "merged": "C:\\Users\\Shivam\\Desktop\\NewsBit-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_international.jpg.flat",
         "source": "C:\\Users\\Shivam\\Desktop\\NewsBit-master\\app\\src\\main\\res\\drawable-v24\\international.jpg"
+    },
+    {
+        "merged": "C:\\Users\\Shivam\\Desktop\\NewsBit-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_techcrunch.png.flat",
+        "source": "C:\\Users\\Shivam\\Desktop\\NewsBit-master\\app\\src\\main\\res\\drawable-v24\\techcrunch.png"
     },
     {
         "merged": "C:\\Users\\Shivam\\Desktop\\NewsBit-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_news_logo1.jpg.flat",
@@ -100,6 +112,10 @@
         "source": "C:\\Users\\Shivam\\Desktop\\NewsBit-master\\app\\src\\main\\res\\navigation\\news_nav_graph.xml"
     },
     {
+        "merged": "C:\\Users\\Shivam\\Desktop\\NewsBit-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_no_bookmark.png.flat",
+        "source": "C:\\Users\\Shivam\\Desktop\\NewsBit-master\\app\\src\\main\\res\\drawable-v24\\no_bookmark.png"
+    },
+    {
         "merged": "C:\\Users\\Shivam\\Desktop\\NewsBit-master\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_article.xml.flat",
         "source": "C:\\Users\\Shivam\\Desktop\\NewsBit-master\\app\\src\\main\\res\\layout\\fragment_article.xml"
     },
@@ -118,6 +134,10 @@
     {
         "merged": "C:\\Users\\Shivam\\Desktop\\NewsBit-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_sports.png.flat",
         "source": "C:\\Users\\Shivam\\Desktop\\NewsBit-master\\app\\src\\main\\res\\drawable-v24\\sports.png"
+    },
+    {
+        "merged": "C:\\Users\\Shivam\\Desktop\\NewsBit-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_times_of_india.png.flat",
+        "source": "C:\\Users\\Shivam\\Desktop\\NewsBit-master\\app\\src\\main\\res\\drawable-v24\\times_of_india.png"
     },
     {
         "merged": "C:\\Users\\Shivam\\Desktop\\NewsBit-master\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher.png.flat",
@@ -142,6 +162,10 @@
     {
         "merged": "C:\\Users\\Shivam\\Desktop\\NewsBit-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_outline_share_24.xml.flat",
         "source": "C:\\Users\\Shivam\\Desktop\\NewsBit-master\\app\\src\\main\\res\\drawable\\ic_outline_share_24.xml"
+    },
+    {
+        "merged": "C:\\Users\\Shivam\\Desktop\\NewsBit-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_journalist.png.flat",
+        "source": "C:\\Users\\Shivam\\Desktop\\NewsBit-master\\app\\src\\main\\res\\drawable-v24\\journalist.png"
     },
     {
         "merged": "C:\\Users\\Shivam\\Desktop\\NewsBit-master\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_explore.xml.flat",
@@ -204,6 +228,10 @@
         "source": "C:\\Users\\Shivam\\Desktop\\NewsBit-master\\app\\src\\main\\res\\drawable-v24\\bookmark_icon.png"
     },
     {
+        "merged": "C:\\Users\\Shivam\\Desktop\\NewsBit-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_p.png.flat",
+        "source": "C:\\Users\\Shivam\\Desktop\\NewsBit-master\\app\\src\\main\\res\\drawable-v24\\p.png"
+    },
+    {
         "merged": "C:\\Users\\Shivam\\Desktop\\NewsBit-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_news_app_icon.png.flat",
         "source": "C:\\Users\\Shivam\\Desktop\\NewsBit-master\\app\\src\\main\\res\\drawable-v24\\news_app_icon.png"
     },
@@ -232,8 +260,20 @@
         "source": "C:\\Users\\Shivam\\Desktop\\NewsBit-master\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\ic_launcher_foreground.png"
     },
     {
+        "merged": "C:\\Users\\Shivam\\Desktop\\NewsBit-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_clapperboard.png.flat",
+        "source": "C:\\Users\\Shivam\\Desktop\\NewsBit-master\\app\\src\\main\\res\\drawable-v24\\clapperboard.png"
+    },
+    {
+        "merged": "C:\\Users\\Shivam\\Desktop\\NewsBit-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_natgeo.png.flat",
+        "source": "C:\\Users\\Shivam\\Desktop\\NewsBit-master\\app\\src\\main\\res\\drawable-v24\\natgeo.png"
+    },
+    {
         "merged": "C:\\Users\\Shivam\\Desktop\\NewsBit-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_the_hindu.png.flat",
         "source": "C:\\Users\\Shivam\\Desktop\\NewsBit-master\\app\\src\\main\\res\\drawable-v24\\the_hindu.png"
+    },
+    {
+        "merged": "C:\\Users\\Shivam\\Desktop\\NewsBit-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_espn.webp.flat",
+        "source": "C:\\Users\\Shivam\\Desktop\\NewsBit-master\\app\\src\\main\\res\\drawable-v24\\espn.webp"
     },
     {
         "merged": "C:\\Users\\Shivam\\Desktop\\NewsBit-master\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher.png.flat",
@@ -246,6 +286,14 @@
     {
         "merged": "C:\\Users\\Shivam\\Desktop\\NewsBit-master\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher_round.png.flat",
         "source": "C:\\Users\\Shivam\\Desktop\\NewsBit-master\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\Shivam\\Desktop\\NewsBit-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_worldwide.png.flat",
+        "source": "C:\\Users\\Shivam\\Desktop\\NewsBit-master\\app\\src\\main\\res\\drawable-v24\\worldwide.png"
+    },
+    {
+        "merged": "C:\\Users\\Shivam\\Desktop\\NewsBit-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_v.png.flat",
+        "source": "C:\\Users\\Shivam\\Desktop\\NewsBit-master\\app\\src\\main\\res\\drawable-v24\\v.png"
     },
     {
         "merged": "C:\\Users\\Shivam\\Desktop\\NewsBit-master\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher_round.png.flat",
@@ -264,6 +312,10 @@
         "source": "C:\\Users\\Shivam\\Desktop\\NewsBit-master\\app\\src\\main\\res\\layout\\activity_sign_in.xml"
     },
     {
+        "merged": "C:\\Users\\Shivam\\Desktop\\NewsBit-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_bbc.png.flat",
+        "source": "C:\\Users\\Shivam\\Desktop\\NewsBit-master\\app\\src\\main\\res\\drawable-v24\\bbc.png"
+    },
+    {
         "merged": "C:\\Users\\Shivam\\Desktop\\NewsBit-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_launcher_foreground.png.flat",
         "source": "C:\\Users\\Shivam\\Desktop\\NewsBit-master\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\ic_launcher_foreground.png"
     },
@@ -276,12 +328,24 @@
         "source": "C:\\Users\\Shivam\\Desktop\\NewsBit-master\\app\\src\\main\\res\\drawable-v24\\politics.png"
     },
     {
+        "merged": "C:\\Users\\Shivam\\Desktop\\NewsBit-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_tr.jpg.flat",
+        "source": "C:\\Users\\Shivam\\Desktop\\NewsBit-master\\app\\src\\main\\res\\drawable-v24\\tr.jpg"
+    },
+    {
         "merged": "C:\\Users\\Shivam\\Desktop\\NewsBit-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_business.png.flat",
         "source": "C:\\Users\\Shivam\\Desktop\\NewsBit-master\\app\\src\\main\\res\\drawable-v24\\business.png"
     },
     {
         "merged": "C:\\Users\\Shivam\\Desktop\\NewsBit-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_baseline_explore_24.xml.flat",
         "source": "C:\\Users\\Shivam\\Desktop\\NewsBit-master\\app\\src\\main\\res\\drawable\\ic_baseline_explore_24.xml"
+    },
+    {
+        "merged": "C:\\Users\\Shivam\\Desktop\\NewsBit-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_hospital.png.flat",
+        "source": "C:\\Users\\Shivam\\Desktop\\NewsBit-master\\app\\src\\main\\res\\drawable-v24\\hospital.png"
+    },
+    {
+        "merged": "C:\\Users\\Shivam\\Desktop\\NewsBit-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_account_box.xml.flat",
+        "source": "C:\\Users\\Shivam\\Desktop\\NewsBit-master\\app\\src\\main\\res\\drawable\\ic_account_box.xml"
     },
     {
         "merged": "C:\\Users\\Shivam\\Desktop\\NewsBit-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_global.png.flat",

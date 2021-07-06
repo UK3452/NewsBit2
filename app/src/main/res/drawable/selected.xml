@@ -8,7 +8,7 @@
             android:innerRadius="3dp"
             android:useLevel="false">
 
-            <solid android:color="@color/black"/>
+            <solid android:color="#0485BF"/>
 
         </shape>
 

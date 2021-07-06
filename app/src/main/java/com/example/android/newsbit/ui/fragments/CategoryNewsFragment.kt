@@ -19,6 +19,7 @@ import com.example.android.newsbit.models.Article
 import com.example.android.newsbit.ui.MainActivity
 import com.example.android.newsbit.ui.NewsViewModel
 import com.example.android.newsbit.utils.Resource
+import com.google.android.material.snackbar.Snackbar
 import kotlinx.coroutines.delay
 import java.util.*
 
@@ -128,8 +129,36 @@ class CategoryNewsFragment : Fragment(R.layout.fragment_category_news) {
             }
         })
 
+        lateinit var savedArticles: List<Article>
+
+        viewModel.getSavedNews().observe(viewLifecycleOwner, Observer { articles ->
+            savedArticles=articles
+        })
+
+        categoryNewsAdapter.setOnBookmarkClickListener {
+            //TODO: find out how to write code to prevent duplicate entry
+
+
+            //it refers to Article
+
+            var alreadySaved  = false
+
+            for(savedArticle in savedArticles)
+            {
+                if(savedArticle.url==it.url) alreadySaved=true
+            }
+            if (alreadySaved==false)
+            {
+                viewModel.saveArticle(it)
+            }
+            Snackbar.make(view, "Article saved successfully", Snackbar.LENGTH_SHORT).show()
+            Log.e(TAG, " Click chala gaya ")
+        }
+
     }
 
+    
+    
     private fun hideProgressBar() {
         paginationProgressBarView.visibility = View.INVISIBLE
         isLoading = false //use for paging
@@ -163,8 +192,8 @@ class CategoryNewsFragment : Fragment(R.layout.fragment_category_news) {
                     {
                         viewModel.getCustomCategoryNews("\"Covid\"+India","en",from,++customCategoryNewsPageTemp)
                     }
-                    else if(category=="Politics"){
-                        viewModel.getCustomCategoryNews("\"Politics\"+India","en",from,++customCategoryNewsPageTemp)
+                    else if(category=="Cryptocurrency"){
+                        viewModel.getCustomCategoryNews("\"Cryptocurrency\"","en",from,++customCategoryNewsPageTemp)
                     }
                     else if(category=="International"){
                         viewModel.getCustomCategoryNews("International","en",from,++customCategoryNewsPageTemp)

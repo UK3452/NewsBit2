@@ -6,15 +6,18 @@ import android.view.View
 import android.widget.AbsListView
 import android.widget.ProgressBar
 import androidx.fragment.app.Fragment
+import androidx.lifecycle.Observer
 import androidx.navigation.fragment.findNavController
 import androidx.navigation.fragment.navArgs
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.android.newsbit.R
 import com.example.android.newsbit.adapters.NewsAdapter
+import com.example.android.newsbit.models.Article
 import com.example.android.newsbit.ui.MainActivity
 import com.example.android.newsbit.ui.NewsViewModel
 import com.example.android.newsbit.utils.Resource
+import com.google.android.material.snackbar.Snackbar
 import java.util.*
 
 
@@ -37,9 +40,7 @@ class SourceNewsFragment : Fragment(R.layout.fragment_source_news) {
     val year = date.get(Calendar.YEAR)
     val month = date.get(Calendar.MONTH)+1
     val day = date.get(Calendar.DAY_OF_MONTH)
-    var from = "$day-$month-$year"
-
-
+    var from = "$year-$month-$day"
 
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
@@ -49,8 +50,6 @@ class SourceNewsFragment : Fragment(R.layout.fragment_source_news) {
         sourceId = sourceNewsArgs.newsSourceId
 
         Log.e(TAG,sourceId)
-
-        viewModel.getSourceNews(sourceId,"en",from,sourceNewsPageTemp)
 
         sourceNewsItemView = view.findViewById(R.id.sourceNewsItemView)
         paginationProgressBarView = view.findViewById(R.id.sourceNewsPaginationProgressBar)
@@ -88,6 +87,31 @@ class SourceNewsFragment : Fragment(R.layout.fragment_source_news) {
                 }
             }
         })
+        lateinit var savedArticles: List<Article>
+
+        viewModel.getSavedNews().observe(viewLifecycleOwner, Observer { articles ->
+            savedArticles=articles
+        })
+
+        sourceNewsAdapter.setOnBookmarkClickListener {
+            //TODO: find out how to write code to prevent duplicate entry
+
+
+            //it refers to Article
+
+            var alreadySaved  = false
+
+            for(savedArticle in savedArticles)
+            {
+                if(savedArticle.url==it.url) alreadySaved=true
+            }
+            if (alreadySaved==false)
+            {
+                viewModel.saveArticle(it)
+            }
+            Snackbar.make(view, "Article saved successfully", Snackbar.LENGTH_SHORT).show()
+            Log.e(TAG, " Click chala gaya ")
+        }
     }
 
     private fun hideProgressBar() {

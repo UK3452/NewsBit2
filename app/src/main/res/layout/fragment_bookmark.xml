@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ui.fragments.BookmarkFragment"
-    android:background="#FFE501">
+    android:background="#EAEAEA">
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/bookmarkedNewsItemView"
@@ -22,7 +22,7 @@
         android:id="@+id/bookmark_notfound"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/black"
+        android:background="#EAEAEA"
         android:visibility="gone"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -31,10 +31,10 @@
 
         <ImageView
             android:id="@+id/imageView"
-            android:layout_width="80dp"
-            android:layout_height="80dp"
+            android:layout_width="350dp"
+            android:layout_height="350dp"
             android:layout_marginBottom="100dp"
-            android:src="@drawable/ic_baseline_android_24"
+            android:src="@drawable/no_bookmark"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -46,6 +46,7 @@
             android:gravity="center"
             android:text="No Bookmarks Found.."
             android:textSize="24sp"
+            android:textColor="#0485BF"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/imageView" />

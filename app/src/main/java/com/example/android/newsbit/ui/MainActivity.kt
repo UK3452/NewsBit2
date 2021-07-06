@@ -5,7 +5,7 @@ import android.content.Intent
 import android.content.SharedPreferences
 import android.os.Bundle
 import android.util.Log
-import android.widget.Toast
+import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.findNavController
@@ -19,7 +19,6 @@ import com.google.android.gms.auth.api.signin.GoogleSignInOptions
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseUser
-import org.jetbrains.annotations.NotNull
 
 
 class MainActivity : AppCompatActivity() {
@@ -42,8 +41,8 @@ class MainActivity : AppCompatActivity() {
 
         //CHECK IF THE USER SIGNED WITH PHONE NUMBER OR NOT
 
-        if (mAuth.currentUser ==null) {
-            Log.e("PhoneNumber","Signed as"+sharedPreferences.getString("phonenumber", null))
+        if (mAuth.currentUser == null) {
+            Log.e("PhoneNumber", "Signed as" + sharedPreferences.getString("phonenumber", null))
             if (restorePrefData()) {
                 getPhonePreference()
             } else {
@@ -51,9 +50,8 @@ class MainActivity : AppCompatActivity() {
                 startActivity(i)
                 finish()
             }
-        }
-        else{
-            Log.e("CurrentUser","Signed as"+currentUser.phoneNumber)
+        } else {
+            Log.e("CurrentUser", "Signed as" + currentUser.phoneNumber)
         }
 
         val gso = GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
@@ -90,14 +88,21 @@ class MainActivity : AppCompatActivity() {
         val navController = findNavController(R.id.newsNavHostFragment)
         val bottomNavigationView: BottomNavigationView = findViewById(R.id.bottomNavigationView)
         bottomNavigationView.setupWithNavController(navController)
-    }
 
+        navController.addOnDestinationChangedListener { _, destination, _ ->
+            when (destination.id) {
+                R.id.articleFragment -> bottomNavigationView.visibility = View.GONE
+                else -> bottomNavigationView.visibility = View.VISIBLE
+            }
+        }
+    }
     private fun signOut() {
         // Firebase sign out
         mAuth.signOut()
-
         // Google sign out
-        googleSignInClient.signOut()
+        if (googleSignInClient != null) {
+            googleSignInClient.signOut()
+        }
     }
 
     private fun restorePrefData(): Boolean {

@@ -30,7 +30,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.example.android.newsbit.ui.MainActivity" />
+        <activity
+            android:name="com.example.android.newsbit.ui.MainActivity"
+            android:windowSoftInputMode="adjustPan" />
 
         <service
             android:name="com.google.firebase.components.ComponentDiscoveryService"

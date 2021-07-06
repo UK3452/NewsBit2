@@ -5,6 +5,9 @@ import android.util.Log
 import android.view.View
 import android.widget.AbsListView
 import android.widget.ProgressBar
+import android.widget.Toast
+import androidx.activity.OnBackPressedCallback
+import androidx.core.view.isVisible
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.navigation.fragment.findNavController
@@ -30,7 +33,7 @@ class TopNewsFragment : Fragment(R.layout.fragment_top_news) {
     var isScrolling = false
     val TAG = "TopNewsFragment"
     var topNewsPageTemp = 1
-
+    var pressedTime: Long = 0
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
@@ -122,6 +125,25 @@ class TopNewsFragment : Fragment(R.layout.fragment_top_news) {
                 }
             }
         })
+
+        //ON BACK PRESS PRESS AGAIN TO EXIT PROMPT
+        requireActivity()
+            .onBackPressedDispatcher
+            .addCallback(viewLifecycleOwner, object : OnBackPressedCallback(true) {
+                override fun handleOnBackPressed() {
+                    // Do custom work here
+                    if (pressedTime + 2000 > System.currentTimeMillis()) {
+                        if (isEnabled) {
+                            isEnabled = false
+                            requireActivity().onBackPressed()
+                        }
+                    } else {
+                        Toast.makeText(requireContext(), "Press back again to exit", Toast.LENGTH_SHORT).show()
+                    }
+                    pressedTime = System.currentTimeMillis()
+                }
+            })
+
     }
 
     private fun hideProgressBar() {
