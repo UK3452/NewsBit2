@@ -44,6 +44,10 @@
         <action
             android:id="@+id/action_exploreFragment_to_sourceNewsFragment"
             app:destination="@id/sourceNewsFragment" />
+        <action
+            android:id="@+id/action_exploreFragment_to_searchFragment"
+            app:destination="@id/searchFragment" />
+
     </fragment>
     <fragment
         android:id="@+id/categoryNewsFragment"
@@ -77,4 +81,16 @@
         android:name="com.example.android.newsbit.ui.fragments.SettingsFragment"
         android:label="fragment_settings"
         tools:layout="@layout/fragment_settings" />
+    <fragment
+        android:id="@+id/searchFragment"
+        android:name="com.example.android.newsbit.ui.fragments.SearchFragment"
+        android:label="fragment_search"
+        tools:layout="@layout/fragment_search" >
+        <action
+            android:id="@+id/action_searchFragment_to_articleFragment"
+            app:destination="@id/articleFragment" />
+        <argument
+            android:name="keyword"
+            app:argType="string"/>
+    </fragment>
 </navigation>

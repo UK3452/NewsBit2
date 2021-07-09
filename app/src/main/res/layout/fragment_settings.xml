@@ -119,62 +119,34 @@
                         app:layout_constraintTop_toBottomOf="@+id/textView2"
                         tools:layout_editor_absoluteX="15dp">
 
-                        <Button
-                            android:id="@+id/day_btn"
+                        <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_margin="10dp"
-                            android:text="DAY"/>
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="16sp"
+                            android:text="NIGHT MODE"/>
 
-                        <Button
-                            android:id="@+id/night_btn"
+                        <androidx.appcompat.widget.SwitchCompat
+                            android:id="@+id/switch1"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_margin="10dp"
-                            android:text="NIGHT"/>
+                            android:layout_margin="2dp"
+                            app:thumbTint="@color/colorPrimary"
+                            app:trackTint="@color/colorSecondary"/>
 
-<!--                        <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"-->
-<!--                            android:layout_width="match_parent"-->
+<!--                        <Button-->
+<!--                            android:id="@+id/day_btn"-->
+<!--                            android:layout_width="wrap_content"-->
 <!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_margin="10dp"-->
+<!--                            android:text="DAY"/>-->
 
-<!--                            android:id="@+id/radioGroup"-->
-<!--                            android:gravity="center_horizontal|center_vertical"-->
-<!--                            android:orientation="horizontal">-->
-
-<!--                            <com.google.android.material.radiobutton.MaterialRadioButton-->
-<!--                                android:id="@+id/defaultBtn"-->
-<!--                                android:layout_width="wrap_content"-->
-<!--                                android:layout_height="wrap_content"-->
-<!--                                android:layout_marginLeft="5dp"-->
-<!--                                android:layout_marginRight="5dp"-->
-<!--                                android:checked="true"-->
-<!--                                app:buttonTint="@color/colorPrimary"-->
-<!--                                android:padding="5dp"-->
-<!--                                android:text="DEFAULT"-->
-<!--                                android:textColor="@color/colorPrimary" />-->
-
-<!--                            <com.google.android.material.radiobutton.MaterialRadioButton-->
-<!--                                android:id="@+id/dayBtn"-->
-<!--                                android:layout_width="wrap_content"-->
-<!--                                android:layout_height="wrap_content"-->
-<!--                                android:layout_marginLeft="5dp"-->
-<!--                                android:layout_marginRight="5dp"-->
-<!--                                android:padding="5dp"-->
-<!--                                app:buttonTint="@color/colorPrimary"-->
-<!--                                android:text="DAY"-->
-<!--                                android:textColor="@color/colorPrimary" />-->
-
-<!--                            <com.google.android.material.radiobutton.MaterialRadioButton-->
-<!--                                android:id="@+id/nightBtn"-->
-<!--                                android:layout_width="wrap_content"-->
-<!--                                android:layout_height="wrap_content"-->
-<!--                                android:layout_marginLeft="5dp"-->
-<!--                                android:layout_marginRight="5dp"-->
-<!--                                app:buttonTint="@color/colorPrimary"-->
-<!--                                android:padding="5dp"-->
-<!--                                android:text="NIGHT"-->
-<!--                                android:textColor="@color/colorPrimary" />-->
-<!--                        </RadioGroup>-->
+<!--                        <Button-->
+<!--                            android:id="@+id/night_btn"-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_margin="10dp"-->
+<!--                            android:text="NIGHT"/>-->
                     </LinearLayout>
 
                 </androidx.constraintlayout.widget.ConstraintLayout>

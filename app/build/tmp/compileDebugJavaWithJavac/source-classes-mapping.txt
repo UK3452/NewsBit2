@@ -6,6 +6,8 @@ com/example/android/newsbit/databinding/FragmentBookmarkBinding.java
  com.example.android.newsbit.databinding.FragmentBookmarkBinding
 com/example/android/newsbit/databinding/FragmentCategoryNewsBinding.java
  com.example.android.newsbit.databinding.FragmentCategoryNewsBinding
+com/example/android/newsbit/databinding/FragmentSearchBinding.java
+ com.example.android.newsbit.databinding.FragmentSearchBinding
 com/example/android/newsbit/db/ArticleDao_Impl.java
  com.example.android.newsbit.db.ArticleDao_Impl
  com.example.android.newsbit.db.ArticleDao_Impl$1

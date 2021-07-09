@@ -2078,6 +2078,7 @@ drawable news_logo1
 drawable news_logo_2
 drawable newsbit
 drawable no_bookmark
+drawable not_found
 drawable notification_action_background
 drawable notification_bg
 drawable notification_bg_low
@@ -2176,6 +2177,7 @@ id action_container
 id action_context_bar
 id action_divider
 id action_exploreFragment_to_categoryNewsFragment
+id action_exploreFragment_to_searchFragment
 id action_exploreFragment_to_sourceNewsFragment
 id action_image
 id action_menu_divider
@@ -2183,6 +2185,7 @@ id action_menu_presenter
 id action_mode_bar
 id action_mode_bar_stub
 id action_mode_close_button
+id action_searchFragment_to_articleFragment
 id action_sourceNewsFragment_to_articleFragment
 id action_text
 id action_topNewsFragment_to_articleFragment
@@ -2272,7 +2275,6 @@ id customPanel
 id cut
 id dark
 id date_picker_actions
-id day_btn
 id decelerate
 id decelerateAndComplete
 id decor_content_parent
@@ -2444,10 +2446,10 @@ id newsNavHostFragment
 id newsSourceItemView
 id news_nav_graph
 id next
-id night_btn
 id noScroll
 id no_result_tv
 id none
+id noresultBg
 id normal
 id notification_background
 id notification_main_column
@@ -2481,6 +2483,7 @@ id preference_divider_view
 id previous
 id profileBtn
 id progress_bar_search
+id progress_bar_search2
 id progress_circular
 id progress_horizontal
 id radio
@@ -2505,7 +2508,9 @@ id scrollIndicatorDown
 id scrollIndicatorUp
 id scrollView
 id scrollable
+id searchFragment
 id searchItemView
+id searchItemView2
 id search_badge
 id search_bar
 id search_button
@@ -2517,6 +2522,7 @@ id search_mag_icon
 id search_plate
 id search_src_text
 id search_view
+id search_view2
 id search_voice_btn
 id select_dialog_listview
 id selected
@@ -2564,6 +2570,7 @@ id stop
 id stretch
 id submenuarrow
 id submit_area
+id switch1
 id tabMode
 id tab_layout
 id tag_accessibility_actions
@@ -2737,6 +2744,7 @@ layout fragment_article
 layout fragment_bookmark
 layout fragment_category_news
 layout fragment_explore
+layout fragment_search
 layout fragment_settings
 layout fragment_source_news
 layout fragment_top_news

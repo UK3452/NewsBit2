@@ -36,11 +36,6 @@
                                 <LayoutPositions />
                               </value>
                             </entry>
-                            <entry key="action_bookmarkFragment_to_settingsFragment2">
-                              <value>
-                                <LayoutPositions />
-                              </value>
-                            </entry>
                           </map>
                         </option>
                       </LayoutPositions>
@@ -72,8 +67,8 @@
                       <LayoutPositions>
                         <option name="myPosition">
                           <Point>
-                            <option name="x" value="292" />
-                            <option name="y" value="65" />
+                            <option name="x" value="356" />
+                            <option name="y" value="-206" />
                           </Point>
                         </option>
                         <option name="myPositions">
@@ -83,12 +78,33 @@
                                 <LayoutPositions />
                               </value>
                             </entry>
-                            <entry key="action_exploreFragment_to_settingsFragment2">
+                            <entry key="action_exploreFragment_to_searchFragment">
                               <value>
                                 <LayoutPositions />
                               </value>
                             </entry>
                             <entry key="action_exploreFragment_to_sourceNewsFragment">
+                              <value>
+                                <LayoutPositions />
+                              </value>
+                            </entry>
+                          </map>
+                        </option>
+                      </LayoutPositions>
+                    </value>
+                  </entry>
+                  <entry key="searchFragment">
+                    <value>
+                      <LayoutPositions>
+                        <option name="myPosition">
+                          <Point>
+                            <option name="x" value="932" />
+                            <option name="y" value="3" />
+                          </Point>
+                        </option>
+                        <option name="myPositions">
+                          <map>
+                            <entry key="action_searchFragment_to_articleFragment">
                               <value>
                                 <LayoutPositions />
                               </value>
@@ -143,11 +159,6 @@
                         <option name="myPositions">
                           <map>
                             <entry key="action_topNewsFragment_to_articleFragment">
-                              <value>
-                                <LayoutPositions />
-                              </value>
-                            </entry>
-                            <entry key="action_topNewsFragment_to_settingsFragment2">
                               <value>
                                 <LayoutPositions />
                               </value>

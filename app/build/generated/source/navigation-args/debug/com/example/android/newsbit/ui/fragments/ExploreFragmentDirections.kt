@@ -34,6 +34,18 @@ public class ExploreFragmentDirections private constructor() {
     }
   }
 
+  private data class ActionExploreFragmentToSearchFragment(
+    public val keyword: String
+  ) : NavDirections {
+    public override fun getActionId(): Int = R.id.action_exploreFragment_to_searchFragment
+
+    public override fun getArguments(): Bundle {
+      val result = Bundle()
+      result.putString("keyword", this.keyword)
+      return result
+    }
+  }
+
   public companion object {
     public fun actionExploreFragmentToCategoryNewsFragment(categoryName: String,
         isCustomCategory: Boolean): NavDirections =
@@ -41,5 +53,8 @@ public class ExploreFragmentDirections private constructor() {
 
     public fun actionExploreFragmentToSourceNewsFragment(newsSourceId: String): NavDirections =
         ActionExploreFragmentToSourceNewsFragment(newsSourceId)
+
+    public fun actionExploreFragmentToSearchFragment(keyword: String): NavDirections =
+        ActionExploreFragmentToSearchFragment(keyword)
   }
 }

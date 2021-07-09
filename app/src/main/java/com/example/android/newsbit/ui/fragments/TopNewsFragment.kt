@@ -39,10 +39,8 @@ class TopNewsFragment : Fragment(R.layout.fragment_top_news) {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-
         viewModel = (activity as MainActivity).viewModel
-
-
+        
         /*if (this::fragViewModel.isInitialized) {
             Log.e(TAG, " chala kya ? ")
         } else {
@@ -53,8 +51,7 @@ class TopNewsFragment : Fragment(R.layout.fragment_top_news) {
         paginationProgressBarView = view.findViewById(R.id.paginationProgressBar)
 
         setupRecyclerView()
-
-
+        
         newsAdapter.setOnItemClickListener {
             val bundle = Bundle().apply {
                 putSerializable("article", it)

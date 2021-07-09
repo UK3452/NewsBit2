@@ -4,12 +4,12 @@ package com.example.android.newsbit.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.widget.AppCompatButton;
 import androidx.appcompat.widget.AppCompatImageView;
+import androidx.appcompat.widget.SwitchCompat;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.viewbinding.ViewBinding;
 import com.example.android.newsbit.R;
@@ -22,13 +22,10 @@ public final class FragmentSettingsBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
-  public final Button dayBtn;
-
-  @NonNull
   public final AppCompatButton logoutBtn;
 
   @NonNull
-  public final Button nightBtn;
+  public final SwitchCompat switch1;
 
   @NonNull
   public final TextView textView2;
@@ -42,13 +39,13 @@ public final class FragmentSettingsBinding implements ViewBinding {
   @NonNull
   public final TextView userName;
 
-  private FragmentSettingsBinding(@NonNull ConstraintLayout rootView, @NonNull Button dayBtn,
-      @NonNull AppCompatButton logoutBtn, @NonNull Button nightBtn, @NonNull TextView textView2,
-      @NonNull AppCompatImageView userDp, @NonNull TextView userEmail, @NonNull TextView userName) {
+  private FragmentSettingsBinding(@NonNull ConstraintLayout rootView,
+      @NonNull AppCompatButton logoutBtn, @NonNull SwitchCompat switch1,
+      @NonNull TextView textView2, @NonNull AppCompatImageView userDp, @NonNull TextView userEmail,
+      @NonNull TextView userName) {
     this.rootView = rootView;
-    this.dayBtn = dayBtn;
     this.logoutBtn = logoutBtn;
-    this.nightBtn = nightBtn;
+    this.switch1 = switch1;
     this.textView2 = textView2;
     this.userDp = userDp;
     this.userEmail = userEmail;
@@ -82,21 +79,15 @@ public final class FragmentSettingsBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.day_btn;
-      Button dayBtn = rootView.findViewById(id);
-      if (dayBtn == null) {
-        break missingId;
-      }
-
       id = R.id.logout_btn;
       AppCompatButton logoutBtn = rootView.findViewById(id);
       if (logoutBtn == null) {
         break missingId;
       }
 
-      id = R.id.night_btn;
-      Button nightBtn = rootView.findViewById(id);
-      if (nightBtn == null) {
+      id = R.id.switch1;
+      SwitchCompat switch1 = rootView.findViewById(id);
+      if (switch1 == null) {
         break missingId;
       }
 
@@ -124,8 +115,8 @@ public final class FragmentSettingsBinding implements ViewBinding {
         break missingId;
       }
 
-      return new FragmentSettingsBinding((ConstraintLayout) rootView, dayBtn, logoutBtn, nightBtn,
-          textView2, userDp, userEmail, userName);
+      return new FragmentSettingsBinding((ConstraintLayout) rootView, logoutBtn, switch1, textView2,
+          userDp, userEmail, userName);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

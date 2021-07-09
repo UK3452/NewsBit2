@@ -4,6 +4,10 @@
         "source": "C:\\Users\\Shivam\\Desktop\\NewsBit-master\\app\\src\\main\\res\\layout\\fragment_source_news.xml"
     },
     {
+        "merged": "C:\\Users\\Shivam\\Desktop\\NewsBit-master\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_search.xml",
+        "source": "C:\\Users\\Shivam\\Desktop\\NewsBit-master\\app\\src\\main\\res\\layout\\fragment_search.xml"
+    },
+    {
         "merged": "C:\\Users\\Shivam\\Desktop\\NewsBit-master\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_settings.xml",
         "source": "C:\\Users\\Shivam\\Desktop\\NewsBit-master\\app\\src\\main\\res\\layout\\fragment_settings.xml"
     },

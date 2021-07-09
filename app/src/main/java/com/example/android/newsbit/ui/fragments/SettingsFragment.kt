@@ -10,6 +10,7 @@ import android.view.ViewGroup
 import android.widget.Toast
 import androidx.annotation.Nullable
 import androidx.appcompat.app.AppCompatDelegate
+import androidx.appcompat.widget.SwitchCompat
 import androidx.fragment.app.Fragment
 import com.bumptech.glide.Glide
 import com.example.android.newsbit.R
@@ -31,6 +32,8 @@ class SettingsFragment : Fragment() {
     private lateinit var mainActivity: MainActivity
     private var theme : Int = 0
 
+    lateinit var switchButton: SwitchCompat
+
     override fun onCreate(@Nullable savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
     }
@@ -49,18 +52,12 @@ class SettingsFragment : Fragment() {
         mainActivity = activity as MainActivity
         mAuth = FirebaseAuth.getInstance()
 
-//        when(getPreference())
-//        {
-//            "default"->{
-//                defaultBtn.isSelected = true
-//            }
-//            "day"-> {
-//                dayBtn.isSelected = true
-//            }
-//            "night"-> {
-//                nightBtn.isSelected = true
-//            }
-//        }
+        switchButton=view.findViewById(R.id.switch1)
+
+        switchButton.setOnCheckedChangeListener({ _ , isChecked ->
+            if (isChecked) AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES)
+            else  AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
+        })
 
         val gso = GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
             .requestIdToken(getString(R.string.default_web_client_id))
@@ -110,12 +107,12 @@ class SettingsFragment : Fragment() {
 //            }
 //        }
 
-        day_btn.setOnClickListener {
-            AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
-        }
-        night_btn.setOnClickListener {
-            AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES)
-        }
+//        day_btn.setOnClickListener {
+//            AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
+//        }
+//        night_btn.setOnClickListener {
+//            AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES)
+//        }
     }
 
     private fun signOut() {

@@ -10,6 +10,7 @@ import androidx.activity.OnBackPressedCallback
 import androidx.core.view.isVisible
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
+import androidx.navigation.findNavController
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -69,23 +70,17 @@ class ExploreFragment : Fragment(R.layout.fragment_explore) {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         viewModel = (activity as MainActivity).viewModel
-        if (isCategoryPrefExist()) {
-            retrievePreferenceCategory()
-        } else {
-            categories = mutableListOf(
-                Category("Business", R.drawable.briefcase, false),
-                Category("Covid", R.drawable.corona, true),
-                Category("Entertainment", R.drawable.clapperboard, false),
-                Category("Health", R.drawable.hospital, false),
-                Category("International", R.drawable.global, true),
-                Category("Cryptocurrency", R.drawable.journalist, true),
-                Category("Science", R.drawable.science, false),
-                Category("Sports", R.drawable.sports, false),
-                Category("Technology", R.drawable.satellite, false)
-            )
-
-            savePereferenceCategory()
-        }
+        categories = mutableListOf(
+            Category("Business", R.drawable.briefcase, false),
+            Category("Covid", R.drawable.corona, true),
+            Category("Entertainment", R.drawable.clapperboard, false),
+            Category("Health", R.drawable.hospital, false),
+            Category("International", R.drawable.global, true),
+            Category("Cryptocurrency", R.drawable.journalist, true),
+            Category("Science", R.drawable.science, false),
+            Category("Sports", R.drawable.sports, false),
+            Category("Technology", R.drawable.satellite, false)
+        )
 
 
 
@@ -104,35 +99,6 @@ class ExploreFragment : Fragment(R.layout.fragment_explore) {
         )
     }
 
-    private fun savePereferenceCategory() {
-        sharedPreferences =
-            requireContext().getSharedPreferences("objectPref", Context.MODE_PRIVATE)
-        val editor: SharedPreferences.Editor = sharedPreferences!!.edit()
-
-        val cat: List<Category> = categories
-        val connectionsJSONString = Gson().toJson(cat)
-        editor.putString("CategoriesObject", connectionsJSONString)
-        editor.putBoolean("categoryIsPresent", true)
-        editor.commit()
-        Log.e("SAVED-->", connectionsJSONString)
-    }
-
-    private fun retrievePreferenceCategory() {
-        sharedPreferences =
-            requireContext().getSharedPreferences("objectPref", Context.MODE_PRIVATE)
-        val categoryStringJSON: String? = sharedPreferences.getString("CategoriesObject", null)
-        val type: Type = object : TypeToken<List<Category?>?>() {}.type
-        val catList: List<Category> =
-            Gson().fromJson<List<Category>>(categoryStringJSON, type)
-        categories = catList as MutableList<Category>
-        Log.e("RETRIEVED-->", categories.toString())
-    }
-
-    private fun isCategoryPrefExist(): Boolean {
-        sharedPreferences =
-            requireContext().getSharedPreferences("objectPref", Context.MODE_PRIVATE)
-        return sharedPreferences.getBoolean("categoryIsPresent", false)
-    }
 
     /*https://stackoverflow.com/questions/14678593/the-application-may-be-doing-too-much-work-on-
     its-main-thread*/
@@ -147,13 +113,7 @@ class ExploreFragment : Fragment(R.layout.fragment_explore) {
         ///
         ///
         ///
-        ///SEARCH VIEW COMPONENT
         val search = view.findViewById<SearchView>(R.id.search_view)
-
-        search.setOnSearchClickListener {
-            navBar = view.findViewById(R.id.bottomNavigationView)
-            navBar.visibility = View.GONE
-        }
 
         search.setOnQueryTextListener(object : SearchView.OnQueryTextListener {
 
@@ -161,13 +121,21 @@ class ExploreFragment : Fragment(R.layout.fragment_explore) {
                 search.clearFocus()
                 if (p0 != null) {
                     if (p0.isNotBlank() || p0.isNotEmpty()) {
-//                  Toast.makeText(view.context,p0,Toast.LENGTH_SHORT).show()
+                  Toast.makeText(view.context,p0,Toast.LENGTH_SHORT).show()
+                        Log.e("KEYWORDD",p0)
                         searchKeyword = p0
-                        viewModel.getSearchedKeywordNews(p0, "en", from, 1)
-                        searchItemView.visibility = View.VISIBLE
-                        bottom_section.visibility = View.GONE
+                        search.setQuery("",false)
+                        viewModel.getSearchedKeywordNews(searchKeyword, "en", from, 1)
+                        val bundle = Bundle().apply {
+                            putString("keyword", searchKeyword)
+                        }
+                        findNavController().navigate(
+                            R.id.action_exploreFragment_to_searchFragment,
+                            bundle
+                        )
                     }
                 }
+
                 return false
             }
 
@@ -176,74 +144,73 @@ class ExploreFragment : Fragment(R.layout.fragment_explore) {
                 return false
             }
         })
-        var c = 0
 
-        requireActivity()
-            .onBackPressedDispatcher
-            .addCallback(viewLifecycleOwner, object : OnBackPressedCallback(true) {
-                override fun handleOnBackPressed() {
-                    // Do custom work here
-                    if (!bottom_section.isVisible) {
-                        searchItemView.visibility = View.GONE
-                        bottom_section.visibility = View.VISIBLE
-                        search.setQuery("", true)
-                    } else {
-                        if (isEnabled) {
-                            isEnabled = false
-                            requireActivity().onBackPressed()
-                        }
-                    }
-                    search.clearFocus()
-                }
-            })
+//        requireActivity()
+//            .onBackPressedDispatcher
+//            .addCallback(viewLifecycleOwner, object : OnBackPressedCallback(true) {
+//                override fun handleOnBackPressed() {
+//                    // Do custom work here
+//                    if (!bottom_section.isVisible) {
+//                        searchItemView.visibility = View.GONE
+//                        bottom_section.visibility = View.VISIBLE
+//                        search.setQuery("", true)
+//                    } else {
+//                        if (isEnabled) {
+//                            isEnabled = false
+//                            requireActivity().onBackPressed()
+//                        }
+//                    }
+//                    search.clearFocus()
+//                }
+//            })
 
-        search.setOnCloseListener(object : SearchView.OnCloseListener {
-            override fun onClose(): Boolean {
-                searchKeyword = ""
-                searchItemView.visibility = View.GONE
-                bottom_section.visibility = View.VISIBLE
-                navBar.visibility = View.VISIBLE
-                return false
-            }
-        })
+//        search.setOnCloseListener(object : SearchView.OnCloseListener {
+//            override fun onClose(): Boolean {
+//                searchKeyword = ""
+//                searchItemView.visibility = View.GONE
+//                bottom_section.visibility = View.VISIBLE
+//                navBar.visibility = View.VISIBLE
+//                return false
+//            }
+//        })
 
         paginationProgressBarView = view.findViewById(R.id.progress_bar_search)
 
-        searchNewsRecyclerView()
+//        searchNewsRecyclerView()
+//
+//        searchNewsAdapter.setOnItemClickListener {
+//            val bundle = Bundle().apply {
+//                putSerializable("article", it)
+//            }
+//            findNavController().navigate(
+//                R.id.action_topNewsFragment_to_articleFragment,
+//                bundle
+//            )
+//        }
 
-        searchNewsAdapter.setOnItemClickListener {
-            val bundle = Bundle().apply {
-                putSerializable("article", it)
-            }
-            findNavController().navigate(
-                R.id.action_topNewsFragment_to_articleFragment,
-                bundle
-            )
-        }
-
-        viewModel.searchedNews.observe(viewLifecycleOwner, Observer {
-            when (it) {
-                is Resource.Success -> {
-                    hideProgressBar()
-                    it.data?.let { newsResponse ->
-                        /*Convert mutable list to normal list newsResponse.articles.toList()
-                        & then submit */
-//                        Log.e(TAG, newsResponse.articles[0].title)
-                        searchNewsAdapter.differ.submitList(newsResponse.articles.toList())
-                        totalResults = newsResponse.totalResults
-                    }
-                }
-                is Resource.Error -> {
-                    hideProgressBar()
-                    it.message?.let { message ->
-//                        Log.e(TAG, "An error occured: $message")
-                    }
-                }
-                is Resource.Loading -> {
-                    showProgressBar()
-                }
-            }
-        })
+//        viewModel.searchedNews.observe(viewLifecycleOwner, Observer {
+//            when (it) {
+//                is Resource.Success -> {
+//                    hideProgressBar()
+//                    it.data?.let { newsResponse ->
+//                        /*Convert mutable list to normal list newsResponse.articles.toList()
+//                        & then submit */
+////                        Log.e(TAG, newsResponse.articles[0].title)
+//                        searchNewsAdapter.differ.submitList(newsResponse.articles.toList())
+//                        totalResults = newsResponse.totalResults
+//                    }
+//                }
+//                is Resource.Error -> {
+//                    hideProgressBar()
+//                    it.message?.let { message ->
+////                        Log.e(TAG, "An error occured: $message")
+//                    }
+//                }
+//                is Resource.Loading -> {
+//                    showProgressBar()
+//                }
+//            }
+//        })
 
         ///
         ///SEARCH VIEW COMPONENT
@@ -307,51 +274,51 @@ class ExploreFragment : Fragment(R.layout.fragment_explore) {
 
 //SETTING UP SEARCH RECYCLER VIEW????????????????????????????????????????????????
 
-    private fun hideProgressBar() {
-        paginationProgressBarView.visibility = View.INVISIBLE
-        isLoading = false //use for paging
-    }
-
-    private fun showProgressBar() {
-        paginationProgressBarView.visibility = View.VISIBLE
-        isLoading = true //use for paging
-    }
-
-
-    val newsScrollListener = object : RecyclerView.OnScrollListener() {
-        override fun onScrolled(recyclerView: RecyclerView, dx: Int, dy: Int) {
-            super.onScrolled(recyclerView, dx, dy)
-
-            val layoutManager = recyclerView.layoutManager as LinearLayoutManager
-
-            val firstVisiblePosition = layoutManager.findFirstVisibleItemPosition()
-            val currentItemCount = layoutManager.itemCount
-            val shouldPaginate = totalResults > currentItemCount &&
-                    firstVisiblePosition >= currentItemCount - 2 &&
-                    isScrolling && !isLoading
-
-            if (shouldPaginate == true) {
-                viewModel.getTopNews("in", ++searchNewsPageTemp)
-                isScrolling = false
-            }
-        }
-
-        override fun onScrollStateChanged(recyclerView: RecyclerView, newState: Int) {
-            super.onScrollStateChanged(recyclerView, newState)
-            if (newState == AbsListView.OnScrollListener.SCROLL_STATE_TOUCH_SCROLL) {
-                isScrolling = true
-            }
-        }
-    }
+//    private fun hideProgressBar() {
+//        paginationProgressBarView.visibility = View.INVISIBLE
+//        isLoading = false //use for paging
+//    }
+//
+//    private fun showProgressBar() {
+//        paginationProgressBarView.visibility = View.VISIBLE
+//        isLoading = true //use for paging
+//    }
 
 
-    private fun searchNewsRecyclerView() {
-        searchNewsAdapter = NewsAdapter()
-        searchItemView.apply {
-            adapter = searchNewsAdapter
-            layoutManager = LinearLayoutManager(activity)
-            addOnScrollListener(newsScrollListener) //using scroll listener for paging
-        }
-    }
+//    val newsScrollListener = object : RecyclerView.OnScrollListener() {
+//        override fun onScrolled(recyclerView: RecyclerView, dx: Int, dy: Int) {
+//            super.onScrolled(recyclerView, dx, dy)
+//
+//            val layoutManager = recyclerView.layoutManager as LinearLayoutManager
+//
+//            val firstVisiblePosition = layoutManager.findFirstVisibleItemPosition()
+//            val currentItemCount = layoutManager.itemCount
+//            val shouldPaginate = totalResults > currentItemCount &&
+//                    firstVisiblePosition >= currentItemCount - 2 &&
+//                    isScrolling && !isLoading
+//
+//            if (shouldPaginate == true) {
+//                viewModel.getTopNews("in", ++searchNewsPageTemp)
+//                isScrolling = false
+//            }
+//        }
+//
+//        override fun onScrollStateChanged(recyclerView: RecyclerView, newState: Int) {
+//            super.onScrollStateChanged(recyclerView, newState)
+//            if (newState == AbsListView.OnScrollListener.SCROLL_STATE_TOUCH_SCROLL) {
+//                isScrolling = true
+//            }
+//        }
+//    }
+
+//
+//    private fun searchNewsRecyclerView() {
+//        searchNewsAdapter = NewsAdapter()
+//        searchItemView.apply {
+//            adapter = searchNewsAdapter
+//            layoutManager = LinearLayoutManager(activity)
+//            addOnScrollListener(newsScrollListener) //using scroll listener for paging
+//        }
+//    }
 
 }
