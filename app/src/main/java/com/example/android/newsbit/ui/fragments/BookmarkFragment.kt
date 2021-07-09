@@ -16,6 +16,7 @@ import androidx.recyclerview.widget.ItemTouchHelper
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.google.android.material.snackbar.Snackbar
+import kotlinx.android.synthetic.main.activity_main.*
 
 class BookmarkFragment : Fragment(R.layout.fragment_bookmark) {
     lateinit var viewModel: NewsViewModel
@@ -62,6 +63,7 @@ class BookmarkFragment : Fragment(R.layout.fragment_bookmark) {
                 }
             }
         }
+
 
         ItemTouchHelper(itemTouchHelperCallback).apply {
             attachToRecyclerView(bookmarkedNewsItemView)

@@ -6,5 +6,7 @@
     <color name="search_bg2">#708090</color>
     <color name="colorPrimary">#0485BF</color>
     <color name="colorSecondary">#EAEAEA</color>
+    <color name="colorOnPrimary">#E5F8FF</color>
     <color name="design_dark_default_color_primary">#0485BF</color>
+    <color name="colorOnSecondary">#494949</color>
 </resources>

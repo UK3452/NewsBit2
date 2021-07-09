@@ -26,6 +26,7 @@ import com.example.android.newsbit.utils.Resource
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
+import kotlinx.android.synthetic.main.activity_main.*
 import java.lang.reflect.Type
 import java.util.*
 
@@ -65,8 +66,7 @@ class ExploreFragment : Fragment(R.layout.fragment_explore) {
     var from = "$year-$month-$day"
 
 
-    override fun onCreate(savedInstanceState: Bundle?)
-    {
+    override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         viewModel = (activity as MainActivity).viewModel
         if (isCategoryPrefExist()) {
@@ -84,8 +84,10 @@ class ExploreFragment : Fragment(R.layout.fragment_explore) {
                 Category("Technology", R.drawable.satellite, false)
             )
 
-                savePereferenceCategory()
+            savePereferenceCategory()
         }
+
+
 
         newsSources = mutableListOf(
             NewsSource("bbc-news", "BBC", R.drawable.bbc),
@@ -150,7 +152,7 @@ class ExploreFragment : Fragment(R.layout.fragment_explore) {
 
         search.setOnSearchClickListener {
             navBar = view.findViewById(R.id.bottomNavigationView)
-            navBar.visibility=View.GONE
+            navBar.visibility = View.GONE
         }
 
         search.setOnQueryTextListener(object : SearchView.OnQueryTextListener {
@@ -159,7 +161,7 @@ class ExploreFragment : Fragment(R.layout.fragment_explore) {
                 search.clearFocus()
                 if (p0 != null) {
                     if (p0.isNotBlank() || p0.isNotEmpty()) {
-//                        Toast.makeText(view.context,p0,Toast.LENGTH_SHORT).show()
+//                  Toast.makeText(view.context,p0,Toast.LENGTH_SHORT).show()
                         searchKeyword = p0
                         viewModel.getSearchedKeywordNews(p0, "en", from, 1)
                         searchItemView.visibility = View.VISIBLE
@@ -181,16 +183,16 @@ class ExploreFragment : Fragment(R.layout.fragment_explore) {
             .addCallback(viewLifecycleOwner, object : OnBackPressedCallback(true) {
                 override fun handleOnBackPressed() {
                     // Do custom work here
-                        if (!bottom_section.isVisible) {
-                            searchItemView.visibility = View.GONE
-                            bottom_section.visibility = View.VISIBLE
-                            search.setQuery("", true)
-                        } else {
-                            if (isEnabled) {
-                                isEnabled = false
-                                requireActivity().onBackPressed()
-                            }
+                    if (!bottom_section.isVisible) {
+                        searchItemView.visibility = View.GONE
+                        bottom_section.visibility = View.VISIBLE
+                        search.setQuery("", true)
+                    } else {
+                        if (isEnabled) {
+                            isEnabled = false
+                            requireActivity().onBackPressed()
                         }
+                    }
                     search.clearFocus()
                 }
             })
@@ -200,7 +202,7 @@ class ExploreFragment : Fragment(R.layout.fragment_explore) {
                 searchKeyword = ""
                 searchItemView.visibility = View.GONE
                 bottom_section.visibility = View.VISIBLE
-                navBar.visibility=View.VISIBLE
+                navBar.visibility = View.VISIBLE
                 return false
             }
         })
@@ -244,8 +246,6 @@ class ExploreFragment : Fragment(R.layout.fragment_explore) {
         })
 
         ///
-        ///
-        ///
         ///SEARCH VIEW COMPONENT
 
         setupCategoryRecyclerView()
@@ -256,7 +256,6 @@ class ExploreFragment : Fragment(R.layout.fragment_explore) {
             if (it.isCustomCategory == false) {
                 viewModel.getCategoryNews("in", it.categoryName, 1)
             } else {
-
                 if (it.categoryName == "Covid") {
                     viewModel.getCustomCategoryNews("\"Covid\"+India", "en", from, 1)
                 } else if (it.categoryName == "Cryptocurency") {
@@ -277,7 +276,7 @@ class ExploreFragment : Fragment(R.layout.fragment_explore) {
         }
 
         newsSourceAdapter.setOnItemClickListener {
-            viewModel.getSourceNews(it.newsSourceID,"en",from,1)
+            viewModel.getSourceNews(it.newsSourceID, "en", from, 1)
             val bundle = Bundle().apply {
                 putString("newsSourceId", it.newsSourceID)
 
@@ -308,7 +307,6 @@ class ExploreFragment : Fragment(R.layout.fragment_explore) {
 
 //SETTING UP SEARCH RECYCLER VIEW????????????????????????????????????????????????
 
-
     private fun hideProgressBar() {
         paginationProgressBarView.visibility = View.INVISIBLE
         isLoading = false //use for paging
@@ -325,7 +323,6 @@ class ExploreFragment : Fragment(R.layout.fragment_explore) {
             super.onScrolled(recyclerView, dx, dy)
 
             val layoutManager = recyclerView.layoutManager as LinearLayoutManager
-
 
             val firstVisiblePosition = layoutManager.findFirstVisibleItemPosition()
             val currentItemCount = layoutManager.itemCount

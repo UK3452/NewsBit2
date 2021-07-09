@@ -14,23 +14,23 @@
 11-->C:\Users\Shivam\Desktop\NewsBit-master\app\src\main\AndroidManifest.xml:5:5-67
 11-->C:\Users\Shivam\Desktop\NewsBit-master\app\src\main\AndroidManifest.xml:5:22-64
 12    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-12-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\Shivam\.gradle\caches\transforms-2\files-2.1\eb1dc4ac929f4761b4925958a43a0bc9\firebase-auth-21.0.1\AndroidManifest.xml:24:5-79
-12-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\Shivam\.gradle\caches\transforms-2\files-2.1\eb1dc4ac929f4761b4925958a43a0bc9\firebase-auth-21.0.1\AndroidManifest.xml:24:22-76
+12-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\Shivam\.gradle\caches\transforms-2\files-2.1\351b05cb18171dd53d32cb3f20744580\firebase-auth-21.0.1\AndroidManifest.xml:24:5-79
+12-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\Shivam\.gradle\caches\transforms-2\files-2.1\351b05cb18171dd53d32cb3f20744580\firebase-auth-21.0.1\AndroidManifest.xml:24:22-76
 13
 14    <application
 14-->C:\Users\Shivam\Desktop\NewsBit-master\app\src\main\AndroidManifest.xml:7:5-24:19
 15        android:allowBackup="true"
 15-->C:\Users\Shivam\Desktop\NewsBit-master\app\src\main\AndroidManifest.xml:8:9-35
 16        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-16-->[androidx.core:core:1.5.0] C:\Users\Shivam\.gradle\caches\transforms-2\files-2.1\3b7b386a8bdcc3af2a96dc213500a1f3\core-1.5.0\AndroidManifest.xml:24:18-86
+16-->[androidx.core:core:1.5.0] C:\Users\Shivam\.gradle\caches\transforms-2\files-2.1\b17ee909f51c82878c8e96ecc2afddcf\core-1.5.0\AndroidManifest.xml:24:18-86
 17        android:debuggable="true"
 18        android:extractNativeLibs="false"
-19        android:icon="@mipmap/ic_launcher"
-19-->C:\Users\Shivam\Desktop\NewsBit-master\app\src\main\AndroidManifest.xml:9:9-43
+19        android:icon="@mipmap/ic_newsbit_launcher"
+19-->C:\Users\Shivam\Desktop\NewsBit-master\app\src\main\AndroidManifest.xml:9:9-51
 20        android:label="@string/app_name"
 20-->C:\Users\Shivam\Desktop\NewsBit-master\app\src\main\AndroidManifest.xml:10:9-41
-21        android:roundIcon="@mipmap/ic_launcher_round"
-21-->C:\Users\Shivam\Desktop\NewsBit-master\app\src\main\AndroidManifest.xml:11:9-54
+21        android:roundIcon="@mipmap/ic_newsbit_launcher_round"
+21-->C:\Users\Shivam\Desktop\NewsBit-master\app\src\main\AndroidManifest.xml:11:9-62
 22        android:supportsRtl="true"
 22-->C:\Users\Shivam\Desktop\NewsBit-master\app\src\main\AndroidManifest.xml:12:9-35
 23        android:testOnly="true"
@@ -61,185 +61,185 @@
 35-->C:\Users\Shivam\Desktop\NewsBit-master\app\src\main\AndroidManifest.xml:23:13-52
 36
 37        <service
-37-->[com.google.firebase:firebase-auth-ktx:21.0.1] C:\Users\Shivam\.gradle\caches\transforms-2\files-2.1\14b99992469ebc985f739cf637ba2b95\firebase-auth-ktx-21.0.1\AndroidManifest.xml:8:9-14:19
+37-->[com.google.firebase:firebase-auth-ktx:21.0.1] C:\Users\Shivam\.gradle\caches\transforms-2\files-2.1\8707abe68fd41cca3b9a1854c924426c\firebase-auth-ktx-21.0.1\AndroidManifest.xml:8:9-14:19
 38            android:name="com.google.firebase.components.ComponentDiscoveryService"
-38-->[com.google.firebase:firebase-auth-ktx:21.0.1] C:\Users\Shivam\.gradle\caches\transforms-2\files-2.1\14b99992469ebc985f739cf637ba2b95\firebase-auth-ktx-21.0.1\AndroidManifest.xml:9:13-84
+38-->[com.google.firebase:firebase-auth-ktx:21.0.1] C:\Users\Shivam\.gradle\caches\transforms-2\files-2.1\8707abe68fd41cca3b9a1854c924426c\firebase-auth-ktx-21.0.1\AndroidManifest.xml:9:13-84
 39            android:directBootAware="true"
-39-->[com.google.firebase:firebase-common:20.0.0] C:\Users\Shivam\.gradle\caches\transforms-2\files-2.1\15d19ac7db3193a16e5bfab4e672169f\firebase-common-20.0.0\AndroidManifest.xml:35:13-43
+39-->[com.google.firebase:firebase-common:20.0.0] C:\Users\Shivam\.gradle\caches\transforms-2\files-2.1\f7db7c9e58f63ec61ecc0ddffc44a96c\firebase-common-20.0.0\AndroidManifest.xml:35:13-43
 40            android:exported="false" >
-40-->[com.google.firebase:firebase-auth-ktx:21.0.1] C:\Users\Shivam\.gradle\caches\transforms-2\files-2.1\14b99992469ebc985f739cf637ba2b95\firebase-auth-ktx-21.0.1\AndroidManifest.xml:10:13-37
+40-->[com.google.firebase:firebase-auth-ktx:21.0.1] C:\Users\Shivam\.gradle\caches\transforms-2\files-2.1\8707abe68fd41cca3b9a1854c924426c\firebase-auth-ktx-21.0.1\AndroidManifest.xml:10:13-37
 41            <meta-data
-41-->[com.google.firebase:firebase-auth-ktx:21.0.1] C:\Users\Shivam\.gradle\caches\transforms-2\files-2.1\14b99992469ebc985f739cf637ba2b95\firebase-auth-ktx-21.0.1\AndroidManifest.xml:11:13-13:85
+41-->[com.google.firebase:firebase-auth-ktx:21.0.1] C:\Users\Shivam\.gradle\caches\transforms-2\files-2.1\8707abe68fd41cca3b9a1854c924426c\firebase-auth-ktx-21.0.1\AndroidManifest.xml:11:13-13:85
 42                android:name="com.google.firebase.components:com.google.firebase.auth.ktx.FirebaseAuthKtxRegistrar"
-42-->[com.google.firebase:firebase-auth-ktx:21.0.1] C:\Users\Shivam\.gradle\caches\transforms-2\files-2.1\14b99992469ebc985f739cf637ba2b95\firebase-auth-ktx-21.0.1\AndroidManifest.xml:12:17-116
+42-->[com.google.firebase:firebase-auth-ktx:21.0.1] C:\Users\Shivam\.gradle\caches\transforms-2\files-2.1\8707abe68fd41cca3b9a1854c924426c\firebase-auth-ktx-21.0.1\AndroidManifest.xml:12:17-116
 43                android:value="com.google.firebase.components.ComponentRegistrar" />
-43-->[com.google.firebase:firebase-auth-ktx:21.0.1] C:\Users\Shivam\.gradle\caches\transforms-2\files-2.1\14b99992469ebc985f739cf637ba2b95\firebase-auth-ktx-21.0.1\AndroidManifest.xml:13:17-82
+43-->[com.google.firebase:firebase-auth-ktx:21.0.1] C:\Users\Shivam\.gradle\caches\transforms-2\files-2.1\8707abe68fd41cca3b9a1854c924426c\firebase-auth-ktx-21.0.1\AndroidManifest.xml:13:17-82
 44            <meta-data
-44-->[com.google.firebase:firebase-common-ktx:20.0.0] C:\Users\Shivam\.gradle\caches\transforms-2\files-2.1\8612862652280181a5aeda137834e52c\firebase-common-ktx-20.0.0\AndroidManifest.xml:15:13-17:85
+44-->[com.google.firebase:firebase-common-ktx:20.0.0] C:\Users\Shivam\.gradle\caches\transforms-2\files-2.1\bb973da04647c9347d8bf7307f6cb7d2\firebase-common-ktx-20.0.0\AndroidManifest.xml:15:13-17:85
 45                android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonKtxRegistrar"
-45-->[com.google.firebase:firebase-common-ktx:20.0.0] C:\Users\Shivam\.gradle\caches\transforms-2\files-2.1\8612862652280181a5aeda137834e52c\firebase-common-ktx-20.0.0\AndroidManifest.xml:16:17-113
+45-->[com.google.firebase:firebase-common-ktx:20.0.0] C:\Users\Shivam\.gradle\caches\transforms-2\files-2.1\bb973da04647c9347d8bf7307f6cb7d2\firebase-common-ktx-20.0.0\AndroidManifest.xml:16:17-113
 46                android:value="com.google.firebase.components.ComponentRegistrar" />
-46-->[com.google.firebase:firebase-common-ktx:20.0.0] C:\Users\Shivam\.gradle\caches\transforms-2\files-2.1\8612862652280181a5aeda137834e52c\firebase-common-ktx-20.0.0\AndroidManifest.xml:17:17-82
+46-->[com.google.firebase:firebase-common-ktx:20.0.0] C:\Users\Shivam\.gradle\caches\transforms-2\files-2.1\bb973da04647c9347d8bf7307f6cb7d2\firebase-common-ktx-20.0.0\AndroidManifest.xml:17:17-82
 47            <meta-data
-47-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\Shivam\.gradle\caches\transforms-2\files-2.1\eb1dc4ac929f4761b4925958a43a0bc9\firebase-auth-21.0.1\AndroidManifest.xml:77:13-79:85
+47-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\Shivam\.gradle\caches\transforms-2\files-2.1\351b05cb18171dd53d32cb3f20744580\firebase-auth-21.0.1\AndroidManifest.xml:77:13-79:85
 48                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
-48-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\Shivam\.gradle\caches\transforms-2\files-2.1\eb1dc4ac929f4761b4925958a43a0bc9\firebase-auth-21.0.1\AndroidManifest.xml:78:17-109
+48-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\Shivam\.gradle\caches\transforms-2\files-2.1\351b05cb18171dd53d32cb3f20744580\firebase-auth-21.0.1\AndroidManifest.xml:78:17-109
 49                android:value="com.google.firebase.components.ComponentRegistrar" />
-49-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\Shivam\.gradle\caches\transforms-2\files-2.1\eb1dc4ac929f4761b4925958a43a0bc9\firebase-auth-21.0.1\AndroidManifest.xml:79:17-82
+49-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\Shivam\.gradle\caches\transforms-2\files-2.1\351b05cb18171dd53d32cb3f20744580\firebase-auth-21.0.1\AndroidManifest.xml:79:17-82
 50        </service>
 51        <service
-51-->[androidx.room:room-runtime:2.3.0] C:\Users\Shivam\.gradle\caches\transforms-2\files-2.1\f9f5f6a546239e506dc7882cf2f94af4\room-runtime-2.3.0\AndroidManifest.xml:25:9-28:40
+51-->[androidx.room:room-runtime:2.3.0] C:\Users\Shivam\.gradle\caches\transforms-2\files-2.1\976d14a7178e954ca40ec89fde2405de\room-runtime-2.3.0\AndroidManifest.xml:25:9-28:40
 52            android:name="androidx.room.MultiInstanceInvalidationService"
-52-->[androidx.room:room-runtime:2.3.0] C:\Users\Shivam\.gradle\caches\transforms-2\files-2.1\f9f5f6a546239e506dc7882cf2f94af4\room-runtime-2.3.0\AndroidManifest.xml:26:13-74
+52-->[androidx.room:room-runtime:2.3.0] C:\Users\Shivam\.gradle\caches\transforms-2\files-2.1\976d14a7178e954ca40ec89fde2405de\room-runtime-2.3.0\AndroidManifest.xml:26:13-74
 53            android:directBootAware="true"
-53-->[androidx.room:room-runtime:2.3.0] C:\Users\Shivam\.gradle\caches\transforms-2\files-2.1\f9f5f6a546239e506dc7882cf2f94af4\room-runtime-2.3.0\AndroidManifest.xml:27:13-43
+53-->[androidx.room:room-runtime:2.3.0] C:\Users\Shivam\.gradle\caches\transforms-2\files-2.1\976d14a7178e954ca40ec89fde2405de\room-runtime-2.3.0\AndroidManifest.xml:27:13-43
 54            android:exported="false" />
-54-->[androidx.room:room-runtime:2.3.0] C:\Users\Shivam\.gradle\caches\transforms-2\files-2.1\f9f5f6a546239e506dc7882cf2f94af4\room-runtime-2.3.0\AndroidManifest.xml:28:13-37
+54-->[androidx.room:room-runtime:2.3.0] C:\Users\Shivam\.gradle\caches\transforms-2\files-2.1\976d14a7178e954ca40ec89fde2405de\room-runtime-2.3.0\AndroidManifest.xml:28:13-37
 55
 56        <activity
-56-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\Shivam\.gradle\caches\transforms-2\files-2.1\eb1dc4ac929f4761b4925958a43a0bc9\firebase-auth-21.0.1\AndroidManifest.xml:27:9-44:20
+56-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\Shivam\.gradle\caches\transforms-2\files-2.1\351b05cb18171dd53d32cb3f20744580\firebase-auth-21.0.1\AndroidManifest.xml:27:9-44:20
 57            android:name="com.google.firebase.auth.internal.GenericIdpActivity"
-57-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\Shivam\.gradle\caches\transforms-2\files-2.1\eb1dc4ac929f4761b4925958a43a0bc9\firebase-auth-21.0.1\AndroidManifest.xml:28:13-80
+57-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\Shivam\.gradle\caches\transforms-2\files-2.1\351b05cb18171dd53d32cb3f20744580\firebase-auth-21.0.1\AndroidManifest.xml:28:13-80
 58            android:excludeFromRecents="true"
-58-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\Shivam\.gradle\caches\transforms-2\files-2.1\eb1dc4ac929f4761b4925958a43a0bc9\firebase-auth-21.0.1\AndroidManifest.xml:29:13-46
+58-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\Shivam\.gradle\caches\transforms-2\files-2.1\351b05cb18171dd53d32cb3f20744580\firebase-auth-21.0.1\AndroidManifest.xml:29:13-46
 59            android:exported="true"
-59-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\Shivam\.gradle\caches\transforms-2\files-2.1\eb1dc4ac929f4761b4925958a43a0bc9\firebase-auth-21.0.1\AndroidManifest.xml:30:13-36
+59-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\Shivam\.gradle\caches\transforms-2\files-2.1\351b05cb18171dd53d32cb3f20744580\firebase-auth-21.0.1\AndroidManifest.xml:30:13-36
 60            android:launchMode="singleTask"
-60-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\Shivam\.gradle\caches\transforms-2\files-2.1\eb1dc4ac929f4761b4925958a43a0bc9\firebase-auth-21.0.1\AndroidManifest.xml:31:13-44
+60-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\Shivam\.gradle\caches\transforms-2\files-2.1\351b05cb18171dd53d32cb3f20744580\firebase-auth-21.0.1\AndroidManifest.xml:31:13-44
 61            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
-61-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\Shivam\.gradle\caches\transforms-2\files-2.1\eb1dc4ac929f4761b4925958a43a0bc9\firebase-auth-21.0.1\AndroidManifest.xml:32:13-72
+61-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\Shivam\.gradle\caches\transforms-2\files-2.1\351b05cb18171dd53d32cb3f20744580\firebase-auth-21.0.1\AndroidManifest.xml:32:13-72
 62            <intent-filter>
-62-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\Shivam\.gradle\caches\transforms-2\files-2.1\eb1dc4ac929f4761b4925958a43a0bc9\firebase-auth-21.0.1\AndroidManifest.xml:33:13-43:29
+62-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\Shivam\.gradle\caches\transforms-2\files-2.1\351b05cb18171dd53d32cb3f20744580\firebase-auth-21.0.1\AndroidManifest.xml:33:13-43:29
 63                <action android:name="android.intent.action.VIEW" />
-63-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\Shivam\.gradle\caches\transforms-2\files-2.1\eb1dc4ac929f4761b4925958a43a0bc9\firebase-auth-21.0.1\AndroidManifest.xml:34:17-69
-63-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\Shivam\.gradle\caches\transforms-2\files-2.1\eb1dc4ac929f4761b4925958a43a0bc9\firebase-auth-21.0.1\AndroidManifest.xml:34:25-66
+63-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\Shivam\.gradle\caches\transforms-2\files-2.1\351b05cb18171dd53d32cb3f20744580\firebase-auth-21.0.1\AndroidManifest.xml:34:17-69
+63-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\Shivam\.gradle\caches\transforms-2\files-2.1\351b05cb18171dd53d32cb3f20744580\firebase-auth-21.0.1\AndroidManifest.xml:34:25-66
 64
 65                <category android:name="android.intent.category.DEFAULT" />
-65-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\Shivam\.gradle\caches\transforms-2\files-2.1\eb1dc4ac929f4761b4925958a43a0bc9\firebase-auth-21.0.1\AndroidManifest.xml:36:17-76
-65-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\Shivam\.gradle\caches\transforms-2\files-2.1\eb1dc4ac929f4761b4925958a43a0bc9\firebase-auth-21.0.1\AndroidManifest.xml:36:27-73
+65-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\Shivam\.gradle\caches\transforms-2\files-2.1\351b05cb18171dd53d32cb3f20744580\firebase-auth-21.0.1\AndroidManifest.xml:36:17-76
+65-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\Shivam\.gradle\caches\transforms-2\files-2.1\351b05cb18171dd53d32cb3f20744580\firebase-auth-21.0.1\AndroidManifest.xml:36:27-73
 66                <category android:name="android.intent.category.BROWSABLE" />
-66-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\Shivam\.gradle\caches\transforms-2\files-2.1\eb1dc4ac929f4761b4925958a43a0bc9\firebase-auth-21.0.1\AndroidManifest.xml:37:17-78
-66-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\Shivam\.gradle\caches\transforms-2\files-2.1\eb1dc4ac929f4761b4925958a43a0bc9\firebase-auth-21.0.1\AndroidManifest.xml:37:27-75
+66-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\Shivam\.gradle\caches\transforms-2\files-2.1\351b05cb18171dd53d32cb3f20744580\firebase-auth-21.0.1\AndroidManifest.xml:37:17-78
+66-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\Shivam\.gradle\caches\transforms-2\files-2.1\351b05cb18171dd53d32cb3f20744580\firebase-auth-21.0.1\AndroidManifest.xml:37:27-75
 67
 68                <data
-68-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\Shivam\.gradle\caches\transforms-2\files-2.1\eb1dc4ac929f4761b4925958a43a0bc9\firebase-auth-21.0.1\AndroidManifest.xml:39:17-42:51
+68-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\Shivam\.gradle\caches\transforms-2\files-2.1\351b05cb18171dd53d32cb3f20744580\firebase-auth-21.0.1\AndroidManifest.xml:39:17-42:51
 69                    android:host="firebase.auth"
-69-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\Shivam\.gradle\caches\transforms-2\files-2.1\eb1dc4ac929f4761b4925958a43a0bc9\firebase-auth-21.0.1\AndroidManifest.xml:40:21-49
+69-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\Shivam\.gradle\caches\transforms-2\files-2.1\351b05cb18171dd53d32cb3f20744580\firebase-auth-21.0.1\AndroidManifest.xml:40:21-49
 70                    android:path="/"
-70-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\Shivam\.gradle\caches\transforms-2\files-2.1\eb1dc4ac929f4761b4925958a43a0bc9\firebase-auth-21.0.1\AndroidManifest.xml:41:21-37
+70-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\Shivam\.gradle\caches\transforms-2\files-2.1\351b05cb18171dd53d32cb3f20744580\firebase-auth-21.0.1\AndroidManifest.xml:41:21-37
 71                    android:scheme="genericidp" />
-71-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\Shivam\.gradle\caches\transforms-2\files-2.1\eb1dc4ac929f4761b4925958a43a0bc9\firebase-auth-21.0.1\AndroidManifest.xml:42:21-48
+71-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\Shivam\.gradle\caches\transforms-2\files-2.1\351b05cb18171dd53d32cb3f20744580\firebase-auth-21.0.1\AndroidManifest.xml:42:21-48
 72            </intent-filter>
 73        </activity>
 74        <activity
-74-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\Shivam\.gradle\caches\transforms-2\files-2.1\eb1dc4ac929f4761b4925958a43a0bc9\firebase-auth-21.0.1\AndroidManifest.xml:45:9-62:20
+74-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\Shivam\.gradle\caches\transforms-2\files-2.1\351b05cb18171dd53d32cb3f20744580\firebase-auth-21.0.1\AndroidManifest.xml:45:9-62:20
 75            android:name="com.google.firebase.auth.internal.RecaptchaActivity"
-75-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\Shivam\.gradle\caches\transforms-2\files-2.1\eb1dc4ac929f4761b4925958a43a0bc9\firebase-auth-21.0.1\AndroidManifest.xml:46:13-79
+75-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\Shivam\.gradle\caches\transforms-2\files-2.1\351b05cb18171dd53d32cb3f20744580\firebase-auth-21.0.1\AndroidManifest.xml:46:13-79
 76            android:excludeFromRecents="true"
-76-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\Shivam\.gradle\caches\transforms-2\files-2.1\eb1dc4ac929f4761b4925958a43a0bc9\firebase-auth-21.0.1\AndroidManifest.xml:47:13-46
+76-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\Shivam\.gradle\caches\transforms-2\files-2.1\351b05cb18171dd53d32cb3f20744580\firebase-auth-21.0.1\AndroidManifest.xml:47:13-46
 77            android:exported="true"
-77-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\Shivam\.gradle\caches\transforms-2\files-2.1\eb1dc4ac929f4761b4925958a43a0bc9\firebase-auth-21.0.1\AndroidManifest.xml:48:13-36
+77-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\Shivam\.gradle\caches\transforms-2\files-2.1\351b05cb18171dd53d32cb3f20744580\firebase-auth-21.0.1\AndroidManifest.xml:48:13-36
 78            android:launchMode="singleTask"
-78-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\Shivam\.gradle\caches\transforms-2\files-2.1\eb1dc4ac929f4761b4925958a43a0bc9\firebase-auth-21.0.1\AndroidManifest.xml:49:13-44
+78-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\Shivam\.gradle\caches\transforms-2\files-2.1\351b05cb18171dd53d32cb3f20744580\firebase-auth-21.0.1\AndroidManifest.xml:49:13-44
 79            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
-79-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\Shivam\.gradle\caches\transforms-2\files-2.1\eb1dc4ac929f4761b4925958a43a0bc9\firebase-auth-21.0.1\AndroidManifest.xml:50:13-72
+79-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\Shivam\.gradle\caches\transforms-2\files-2.1\351b05cb18171dd53d32cb3f20744580\firebase-auth-21.0.1\AndroidManifest.xml:50:13-72
 80            <intent-filter>
-80-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\Shivam\.gradle\caches\transforms-2\files-2.1\eb1dc4ac929f4761b4925958a43a0bc9\firebase-auth-21.0.1\AndroidManifest.xml:51:13-61:29
+80-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\Shivam\.gradle\caches\transforms-2\files-2.1\351b05cb18171dd53d32cb3f20744580\firebase-auth-21.0.1\AndroidManifest.xml:51:13-61:29
 81                <action android:name="android.intent.action.VIEW" />
-81-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\Shivam\.gradle\caches\transforms-2\files-2.1\eb1dc4ac929f4761b4925958a43a0bc9\firebase-auth-21.0.1\AndroidManifest.xml:34:17-69
-81-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\Shivam\.gradle\caches\transforms-2\files-2.1\eb1dc4ac929f4761b4925958a43a0bc9\firebase-auth-21.0.1\AndroidManifest.xml:34:25-66
+81-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\Shivam\.gradle\caches\transforms-2\files-2.1\351b05cb18171dd53d32cb3f20744580\firebase-auth-21.0.1\AndroidManifest.xml:34:17-69
+81-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\Shivam\.gradle\caches\transforms-2\files-2.1\351b05cb18171dd53d32cb3f20744580\firebase-auth-21.0.1\AndroidManifest.xml:34:25-66
 82
 83                <category android:name="android.intent.category.DEFAULT" />
-83-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\Shivam\.gradle\caches\transforms-2\files-2.1\eb1dc4ac929f4761b4925958a43a0bc9\firebase-auth-21.0.1\AndroidManifest.xml:36:17-76
-83-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\Shivam\.gradle\caches\transforms-2\files-2.1\eb1dc4ac929f4761b4925958a43a0bc9\firebase-auth-21.0.1\AndroidManifest.xml:36:27-73
+83-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\Shivam\.gradle\caches\transforms-2\files-2.1\351b05cb18171dd53d32cb3f20744580\firebase-auth-21.0.1\AndroidManifest.xml:36:17-76
+83-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\Shivam\.gradle\caches\transforms-2\files-2.1\351b05cb18171dd53d32cb3f20744580\firebase-auth-21.0.1\AndroidManifest.xml:36:27-73
 84                <category android:name="android.intent.category.BROWSABLE" />
-84-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\Shivam\.gradle\caches\transforms-2\files-2.1\eb1dc4ac929f4761b4925958a43a0bc9\firebase-auth-21.0.1\AndroidManifest.xml:37:17-78
-84-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\Shivam\.gradle\caches\transforms-2\files-2.1\eb1dc4ac929f4761b4925958a43a0bc9\firebase-auth-21.0.1\AndroidManifest.xml:37:27-75
+84-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\Shivam\.gradle\caches\transforms-2\files-2.1\351b05cb18171dd53d32cb3f20744580\firebase-auth-21.0.1\AndroidManifest.xml:37:17-78
+84-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\Shivam\.gradle\caches\transforms-2\files-2.1\351b05cb18171dd53d32cb3f20744580\firebase-auth-21.0.1\AndroidManifest.xml:37:27-75
 85
 86                <data
-86-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\Shivam\.gradle\caches\transforms-2\files-2.1\eb1dc4ac929f4761b4925958a43a0bc9\firebase-auth-21.0.1\AndroidManifest.xml:39:17-42:51
+86-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\Shivam\.gradle\caches\transforms-2\files-2.1\351b05cb18171dd53d32cb3f20744580\firebase-auth-21.0.1\AndroidManifest.xml:39:17-42:51
 87                    android:host="firebase.auth"
-87-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\Shivam\.gradle\caches\transforms-2\files-2.1\eb1dc4ac929f4761b4925958a43a0bc9\firebase-auth-21.0.1\AndroidManifest.xml:40:21-49
+87-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\Shivam\.gradle\caches\transforms-2\files-2.1\351b05cb18171dd53d32cb3f20744580\firebase-auth-21.0.1\AndroidManifest.xml:40:21-49
 88                    android:path="/"
-88-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\Shivam\.gradle\caches\transforms-2\files-2.1\eb1dc4ac929f4761b4925958a43a0bc9\firebase-auth-21.0.1\AndroidManifest.xml:41:21-37
+88-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\Shivam\.gradle\caches\transforms-2\files-2.1\351b05cb18171dd53d32cb3f20744580\firebase-auth-21.0.1\AndroidManifest.xml:41:21-37
 89                    android:scheme="recaptcha" />
-89-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\Shivam\.gradle\caches\transforms-2\files-2.1\eb1dc4ac929f4761b4925958a43a0bc9\firebase-auth-21.0.1\AndroidManifest.xml:42:21-48
+89-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\Shivam\.gradle\caches\transforms-2\files-2.1\351b05cb18171dd53d32cb3f20744580\firebase-auth-21.0.1\AndroidManifest.xml:42:21-48
 90            </intent-filter>
 91        </activity>
 92
 93        <service
-93-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\Shivam\.gradle\caches\transforms-2\files-2.1\eb1dc4ac929f4761b4925958a43a0bc9\firebase-auth-21.0.1\AndroidManifest.xml:64:9-73:19
+93-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\Shivam\.gradle\caches\transforms-2\files-2.1\351b05cb18171dd53d32cb3f20744580\firebase-auth-21.0.1\AndroidManifest.xml:64:9-73:19
 94            android:name="com.google.firebase.auth.api.fallback.service.FirebaseAuthFallbackService"
-94-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\Shivam\.gradle\caches\transforms-2\files-2.1\eb1dc4ac929f4761b4925958a43a0bc9\firebase-auth-21.0.1\AndroidManifest.xml:65:13-101
+94-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\Shivam\.gradle\caches\transforms-2\files-2.1\351b05cb18171dd53d32cb3f20744580\firebase-auth-21.0.1\AndroidManifest.xml:65:13-101
 95            android:enabled="true"
-95-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\Shivam\.gradle\caches\transforms-2\files-2.1\eb1dc4ac929f4761b4925958a43a0bc9\firebase-auth-21.0.1\AndroidManifest.xml:66:13-35
+95-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\Shivam\.gradle\caches\transforms-2\files-2.1\351b05cb18171dd53d32cb3f20744580\firebase-auth-21.0.1\AndroidManifest.xml:66:13-35
 96            android:exported="false" >
-96-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\Shivam\.gradle\caches\transforms-2\files-2.1\eb1dc4ac929f4761b4925958a43a0bc9\firebase-auth-21.0.1\AndroidManifest.xml:67:13-37
+96-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\Shivam\.gradle\caches\transforms-2\files-2.1\351b05cb18171dd53d32cb3f20744580\firebase-auth-21.0.1\AndroidManifest.xml:67:13-37
 97            <intent-filter>
-97-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\Shivam\.gradle\caches\transforms-2\files-2.1\eb1dc4ac929f4761b4925958a43a0bc9\firebase-auth-21.0.1\AndroidManifest.xml:68:13-72:29
+97-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\Shivam\.gradle\caches\transforms-2\files-2.1\351b05cb18171dd53d32cb3f20744580\firebase-auth-21.0.1\AndroidManifest.xml:68:13-72:29
 98                <action android:name="com.google.firebase.auth.api.gms.service.START" />
-98-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\Shivam\.gradle\caches\transforms-2\files-2.1\eb1dc4ac929f4761b4925958a43a0bc9\firebase-auth-21.0.1\AndroidManifest.xml:69:17-89
-98-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\Shivam\.gradle\caches\transforms-2\files-2.1\eb1dc4ac929f4761b4925958a43a0bc9\firebase-auth-21.0.1\AndroidManifest.xml:69:25-86
+98-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\Shivam\.gradle\caches\transforms-2\files-2.1\351b05cb18171dd53d32cb3f20744580\firebase-auth-21.0.1\AndroidManifest.xml:69:17-89
+98-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\Shivam\.gradle\caches\transforms-2\files-2.1\351b05cb18171dd53d32cb3f20744580\firebase-auth-21.0.1\AndroidManifest.xml:69:25-86
 99
 100                <category android:name="android.intent.category.DEFAULT" />
-100-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\Shivam\.gradle\caches\transforms-2\files-2.1\eb1dc4ac929f4761b4925958a43a0bc9\firebase-auth-21.0.1\AndroidManifest.xml:36:17-76
-100-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\Shivam\.gradle\caches\transforms-2\files-2.1\eb1dc4ac929f4761b4925958a43a0bc9\firebase-auth-21.0.1\AndroidManifest.xml:36:27-73
+100-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\Shivam\.gradle\caches\transforms-2\files-2.1\351b05cb18171dd53d32cb3f20744580\firebase-auth-21.0.1\AndroidManifest.xml:36:17-76
+100-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\Shivam\.gradle\caches\transforms-2\files-2.1\351b05cb18171dd53d32cb3f20744580\firebase-auth-21.0.1\AndroidManifest.xml:36:27-73
 101            </intent-filter>
 102        </service>
 103
 104        <activity
-104-->[com.google.android.gms:play-services-auth:19.0.0] C:\Users\Shivam\.gradle\caches\transforms-2\files-2.1\3bc97f0efc03fdce92ea0113745e2a37\play-services-auth-19.0.0\AndroidManifest.xml:23:9-27:75
+104-->[com.google.android.gms:play-services-auth:19.0.0] C:\Users\Shivam\.gradle\caches\transforms-2\files-2.1\1b9d573256b6987c63c703e27c7518e8\play-services-auth-19.0.0\AndroidManifest.xml:23:9-27:75
 105            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
-105-->[com.google.android.gms:play-services-auth:19.0.0] C:\Users\Shivam\.gradle\caches\transforms-2\files-2.1\3bc97f0efc03fdce92ea0113745e2a37\play-services-auth-19.0.0\AndroidManifest.xml:24:13-93
+105-->[com.google.android.gms:play-services-auth:19.0.0] C:\Users\Shivam\.gradle\caches\transforms-2\files-2.1\1b9d573256b6987c63c703e27c7518e8\play-services-auth-19.0.0\AndroidManifest.xml:24:13-93
 106            android:excludeFromRecents="true"
-106-->[com.google.android.gms:play-services-auth:19.0.0] C:\Users\Shivam\.gradle\caches\transforms-2\files-2.1\3bc97f0efc03fdce92ea0113745e2a37\play-services-auth-19.0.0\AndroidManifest.xml:25:13-46
+106-->[com.google.android.gms:play-services-auth:19.0.0] C:\Users\Shivam\.gradle\caches\transforms-2\files-2.1\1b9d573256b6987c63c703e27c7518e8\play-services-auth-19.0.0\AndroidManifest.xml:25:13-46
 107            android:exported="false"
-107-->[com.google.android.gms:play-services-auth:19.0.0] C:\Users\Shivam\.gradle\caches\transforms-2\files-2.1\3bc97f0efc03fdce92ea0113745e2a37\play-services-auth-19.0.0\AndroidManifest.xml:26:13-37
+107-->[com.google.android.gms:play-services-auth:19.0.0] C:\Users\Shivam\.gradle\caches\transforms-2\files-2.1\1b9d573256b6987c63c703e27c7518e8\play-services-auth-19.0.0\AndroidManifest.xml:26:13-37
 108            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-108-->[com.google.android.gms:play-services-auth:19.0.0] C:\Users\Shivam\.gradle\caches\transforms-2\files-2.1\3bc97f0efc03fdce92ea0113745e2a37\play-services-auth-19.0.0\AndroidManifest.xml:27:13-72
+108-->[com.google.android.gms:play-services-auth:19.0.0] C:\Users\Shivam\.gradle\caches\transforms-2\files-2.1\1b9d573256b6987c63c703e27c7518e8\play-services-auth-19.0.0\AndroidManifest.xml:27:13-72
 109        <!--
 110            Service handling Google Sign-In user revocation. For apps that do not integrate with
 111            Google Sign-In, this service will never be started.
 112        -->
 113        <service
-113-->[com.google.android.gms:play-services-auth:19.0.0] C:\Users\Shivam\.gradle\caches\transforms-2\files-2.1\3bc97f0efc03fdce92ea0113745e2a37\play-services-auth-19.0.0\AndroidManifest.xml:33:9-37:51
+113-->[com.google.android.gms:play-services-auth:19.0.0] C:\Users\Shivam\.gradle\caches\transforms-2\files-2.1\1b9d573256b6987c63c703e27c7518e8\play-services-auth-19.0.0\AndroidManifest.xml:33:9-37:51
 114            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
-114-->[com.google.android.gms:play-services-auth:19.0.0] C:\Users\Shivam\.gradle\caches\transforms-2\files-2.1\3bc97f0efc03fdce92ea0113745e2a37\play-services-auth-19.0.0\AndroidManifest.xml:34:13-89
+114-->[com.google.android.gms:play-services-auth:19.0.0] C:\Users\Shivam\.gradle\caches\transforms-2\files-2.1\1b9d573256b6987c63c703e27c7518e8\play-services-auth-19.0.0\AndroidManifest.xml:34:13-89
 115            android:exported="true"
-115-->[com.google.android.gms:play-services-auth:19.0.0] C:\Users\Shivam\.gradle\caches\transforms-2\files-2.1\3bc97f0efc03fdce92ea0113745e2a37\play-services-auth-19.0.0\AndroidManifest.xml:35:13-36
+115-->[com.google.android.gms:play-services-auth:19.0.0] C:\Users\Shivam\.gradle\caches\transforms-2\files-2.1\1b9d573256b6987c63c703e27c7518e8\play-services-auth-19.0.0\AndroidManifest.xml:35:13-36
 116            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION"
-116-->[com.google.android.gms:play-services-auth:19.0.0] C:\Users\Shivam\.gradle\caches\transforms-2\files-2.1\3bc97f0efc03fdce92ea0113745e2a37\play-services-auth-19.0.0\AndroidManifest.xml:36:13-107
+116-->[com.google.android.gms:play-services-auth:19.0.0] C:\Users\Shivam\.gradle\caches\transforms-2\files-2.1\1b9d573256b6987c63c703e27c7518e8\play-services-auth-19.0.0\AndroidManifest.xml:36:13-107
 117            android:visibleToInstantApps="true" />
-117-->[com.google.android.gms:play-services-auth:19.0.0] C:\Users\Shivam\.gradle\caches\transforms-2\files-2.1\3bc97f0efc03fdce92ea0113745e2a37\play-services-auth-19.0.0\AndroidManifest.xml:37:13-48
+117-->[com.google.android.gms:play-services-auth:19.0.0] C:\Users\Shivam\.gradle\caches\transforms-2\files-2.1\1b9d573256b6987c63c703e27c7518e8\play-services-auth-19.0.0\AndroidManifest.xml:37:13-48
 118
 119        <provider
-119-->[com.google.firebase:firebase-common:20.0.0] C:\Users\Shivam\.gradle\caches\transforms-2\files-2.1\15d19ac7db3193a16e5bfab4e672169f\firebase-common-20.0.0\AndroidManifest.xml:26:9-31:39
+119-->[com.google.firebase:firebase-common:20.0.0] C:\Users\Shivam\.gradle\caches\transforms-2\files-2.1\f7db7c9e58f63ec61ecc0ddffc44a96c\firebase-common-20.0.0\AndroidManifest.xml:26:9-31:39
 120            android:name="com.google.firebase.provider.FirebaseInitProvider"
-120-->[com.google.firebase:firebase-common:20.0.0] C:\Users\Shivam\.gradle\caches\transforms-2\files-2.1\15d19ac7db3193a16e5bfab4e672169f\firebase-common-20.0.0\AndroidManifest.xml:27:13-77
+120-->[com.google.firebase:firebase-common:20.0.0] C:\Users\Shivam\.gradle\caches\transforms-2\files-2.1\f7db7c9e58f63ec61ecc0ddffc44a96c\firebase-common-20.0.0\AndroidManifest.xml:27:13-77
 121            android:authorities="com.example.android.newsbit.firebaseinitprovider"
-121-->[com.google.firebase:firebase-common:20.0.0] C:\Users\Shivam\.gradle\caches\transforms-2\files-2.1\15d19ac7db3193a16e5bfab4e672169f\firebase-common-20.0.0\AndroidManifest.xml:28:13-72
+121-->[com.google.firebase:firebase-common:20.0.0] C:\Users\Shivam\.gradle\caches\transforms-2\files-2.1\f7db7c9e58f63ec61ecc0ddffc44a96c\firebase-common-20.0.0\AndroidManifest.xml:28:13-72
 122            android:directBootAware="true"
-122-->[com.google.firebase:firebase-common:20.0.0] C:\Users\Shivam\.gradle\caches\transforms-2\files-2.1\15d19ac7db3193a16e5bfab4e672169f\firebase-common-20.0.0\AndroidManifest.xml:29:13-43
+122-->[com.google.firebase:firebase-common:20.0.0] C:\Users\Shivam\.gradle\caches\transforms-2\files-2.1\f7db7c9e58f63ec61ecc0ddffc44a96c\firebase-common-20.0.0\AndroidManifest.xml:29:13-43
 123            android:exported="false"
-123-->[com.google.firebase:firebase-common:20.0.0] C:\Users\Shivam\.gradle\caches\transforms-2\files-2.1\15d19ac7db3193a16e5bfab4e672169f\firebase-common-20.0.0\AndroidManifest.xml:30:13-37
+123-->[com.google.firebase:firebase-common:20.0.0] C:\Users\Shivam\.gradle\caches\transforms-2\files-2.1\f7db7c9e58f63ec61ecc0ddffc44a96c\firebase-common-20.0.0\AndroidManifest.xml:30:13-37
 124            android:initOrder="100" />
-124-->[com.google.firebase:firebase-common:20.0.0] C:\Users\Shivam\.gradle\caches\transforms-2\files-2.1\15d19ac7db3193a16e5bfab4e672169f\firebase-common-20.0.0\AndroidManifest.xml:31:13-36
+124-->[com.google.firebase:firebase-common:20.0.0] C:\Users\Shivam\.gradle\caches\transforms-2\files-2.1\f7db7c9e58f63ec61ecc0ddffc44a96c\firebase-common-20.0.0\AndroidManifest.xml:31:13-36
 125
 126        <activity
-126-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\Shivam\.gradle\caches\transforms-2\files-2.1\24261579a72050de11f3186f2cb48d60\play-services-base-17.1.0\AndroidManifest.xml:23:9-26:75
+126-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\Shivam\.gradle\caches\transforms-2\files-2.1\bf6275afe8356746f7b078823dae6bb5\play-services-base-17.1.0\AndroidManifest.xml:23:9-26:75
 127            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-127-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\Shivam\.gradle\caches\transforms-2\files-2.1\24261579a72050de11f3186f2cb48d60\play-services-base-17.1.0\AndroidManifest.xml:24:13-79
+127-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\Shivam\.gradle\caches\transforms-2\files-2.1\bf6275afe8356746f7b078823dae6bb5\play-services-base-17.1.0\AndroidManifest.xml:24:13-79
 128            android:exported="false"
-128-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\Shivam\.gradle\caches\transforms-2\files-2.1\24261579a72050de11f3186f2cb48d60\play-services-base-17.1.0\AndroidManifest.xml:25:13-37
+128-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\Shivam\.gradle\caches\transforms-2\files-2.1\bf6275afe8356746f7b078823dae6bb5\play-services-base-17.1.0\AndroidManifest.xml:25:13-37
 129            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-129-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\Shivam\.gradle\caches\transforms-2\files-2.1\24261579a72050de11f3186f2cb48d60\play-services-base-17.1.0\AndroidManifest.xml:26:13-72
+129-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\Shivam\.gradle\caches\transforms-2\files-2.1\bf6275afe8356746f7b078823dae6bb5\play-services-base-17.1.0\AndroidManifest.xml:26:13-72
 130
 131        <meta-data
-131-->[com.google.android.gms:play-services-basement:17.1.1] C:\Users\Shivam\.gradle\caches\transforms-2\files-2.1\f036f1e77e5bc09baaffc8f50be1c486\play-services-basement-17.1.1\AndroidManifest.xml:23:9-25:69
+131-->[com.google.android.gms:play-services-basement:17.1.1] C:\Users\Shivam\.gradle\caches\transforms-2\files-2.1\abb3b73c1b5d9fc249499a6ce314ab15\play-services-basement-17.1.1\AndroidManifest.xml:23:9-25:69
 132            android:name="com.google.android.gms.version"
-132-->[com.google.android.gms:play-services-basement:17.1.1] C:\Users\Shivam\.gradle\caches\transforms-2\files-2.1\f036f1e77e5bc09baaffc8f50be1c486\play-services-basement-17.1.1\AndroidManifest.xml:24:13-58
+132-->[com.google.android.gms:play-services-basement:17.1.1] C:\Users\Shivam\.gradle\caches\transforms-2\files-2.1\abb3b73c1b5d9fc249499a6ce314ab15\play-services-basement-17.1.1\AndroidManifest.xml:24:13-58
 133            android:value="@integer/google_play_services_version" />
-133-->[com.google.android.gms:play-services-basement:17.1.1] C:\Users\Shivam\.gradle\caches\transforms-2\files-2.1\f036f1e77e5bc09baaffc8f50be1c486\play-services-basement-17.1.1\AndroidManifest.xml:25:13-66
+133-->[com.google.android.gms:play-services-basement:17.1.1] C:\Users\Shivam\.gradle\caches\transforms-2\files-2.1\abb3b73c1b5d9fc249499a6ce314ab15\play-services-basement-17.1.1\AndroidManifest.xml:25:13-66
 134    </application>
 135
 136</manifest>

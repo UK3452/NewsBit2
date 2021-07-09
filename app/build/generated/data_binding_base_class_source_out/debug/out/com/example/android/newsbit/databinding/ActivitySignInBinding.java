@@ -5,7 +5,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
-import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
@@ -14,6 +13,7 @@ import androidx.appcompat.widget.AppCompatButton;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.viewbinding.ViewBinding;
 import com.example.android.newsbit.R;
+import com.google.android.material.card.MaterialCardView;
 import com.google.android.material.textfield.TextInputEditText;
 import com.google.android.material.textfield.TextInputLayout;
 import java.lang.NullPointerException;
@@ -34,7 +34,7 @@ public final class ActivitySignInBinding implements ViewBinding {
   public final LinearLayout linearLayout;
 
   @NonNull
-  public final ImageView logoImg;
+  public final MaterialCardView logoImg;
 
   @NonNull
   public final TextView otpMsg;
@@ -68,7 +68,7 @@ public final class ActivitySignInBinding implements ViewBinding {
 
   private ActivitySignInBinding(@NonNull ConstraintLayout rootView, @NonNull LinearLayout buttonLl,
       @NonNull LinearLayout googleLoginBtn, @NonNull LinearLayout linearLayout,
-      @NonNull ImageView logoImg, @NonNull TextView otpMsg, @NonNull Button otpResend,
+      @NonNull MaterialCardView logoImg, @NonNull TextView otpMsg, @NonNull Button otpResend,
       @NonNull TextInputLayout otpTextView, @NonNull TextInputEditText otpTxtNum,
       @NonNull TextInputLayout phoneNum, @NonNull TextInputEditText phoneNum1,
       @NonNull TextView txtSlogan, @NonNull TextView txtSlogan2, @NonNull AppCompatButton verifyBtn,
@@ -136,7 +136,7 @@ public final class ActivitySignInBinding implements ViewBinding {
       }
 
       id = R.id.logo_img;
-      ImageView logoImg = rootView.findViewById(id);
+      MaterialCardView logoImg = rootView.findViewById(id);
       if (logoImg == null) {
         break missingId;
       }

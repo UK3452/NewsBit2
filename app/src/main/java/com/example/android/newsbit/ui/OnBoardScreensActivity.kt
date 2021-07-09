@@ -8,6 +8,7 @@ import android.os.Bundle
 import android.view.Window
 import android.view.WindowManager
 import android.widget.TextView
+import androidx.appcompat.app.AppCompatDelegate
 import androidx.viewpager.widget.ViewPager
 import com.example.android.newsbit.R
 import com.google.android.material.tabs.TabLayout
@@ -26,6 +27,7 @@ class OnBoardScreensActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
 
+        AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
         super.onCreate(savedInstanceState)
 
         if (restorePrefData()) {
@@ -39,12 +41,13 @@ class OnBoardScreensActivity : AppCompatActivity() {
             WindowManager.LayoutParams.FLAG_FULLSCREEN,
             WindowManager.LayoutParams.FLAG_FULLSCREEN
         )
-
+        setTheme(R.style.Theme_NewsBit)
         setContentView(R.layout.activity_on_board_screens)
 
         tabLayout = findViewById(R.id.tab_layout)
         nextText = findViewById(R.id.next)
         previousText = findViewById(R.id.previous)
+
         val onBoardingScreens: MutableList<OnBoardingScreens> = ArrayList()
         onBoardingScreens.add(
             OnBoardingScreens(
@@ -138,6 +141,7 @@ class OnBoardScreensActivity : AppCompatActivity() {
         sharedPreferences = applicationContext.getSharedPreferences("pref", Context.MODE_PRIVATE)
         val editor = sharedPreferences!!.edit()
         editor.putBoolean("isFirstTimeRun", true)
+//        editor.putString("theme","default")
         editor.apply()
     }
 

@@ -33,7 +33,7 @@ public final class ActivityMainBinding implements ViewBinding {
   public final FrameLayout flFragment;
 
   @NonNull
-  public final ImageButton imageButton;
+  public final ImageButton profileBtn;
 
   @NonNull
   public final TextView textView;
@@ -43,12 +43,12 @@ public final class ActivityMainBinding implements ViewBinding {
 
   private ActivityMainBinding(@NonNull ConstraintLayout rootView, @NonNull AppBarLayout appbar,
       @NonNull BottomNavigationView bottomNavigationView, @NonNull FrameLayout flFragment,
-      @NonNull ImageButton imageButton, @NonNull TextView textView, @NonNull Toolbar toolbar) {
+      @NonNull ImageButton profileBtn, @NonNull TextView textView, @NonNull Toolbar toolbar) {
     this.rootView = rootView;
     this.appbar = appbar;
     this.bottomNavigationView = bottomNavigationView;
     this.flFragment = flFragment;
-    this.imageButton = imageButton;
+    this.profileBtn = profileBtn;
     this.textView = textView;
     this.toolbar = toolbar;
   }
@@ -98,9 +98,9 @@ public final class ActivityMainBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.imageButton;
-      ImageButton imageButton = rootView.findViewById(id);
-      if (imageButton == null) {
+      id = R.id.profileBtn;
+      ImageButton profileBtn = rootView.findViewById(id);
+      if (profileBtn == null) {
         break missingId;
       }
 
@@ -117,7 +117,7 @@ public final class ActivityMainBinding implements ViewBinding {
       }
 
       return new ActivityMainBinding((ConstraintLayout) rootView, appbar, bottomNavigationView,
-          flFragment, imageButton, textView, toolbar);
+          flFragment, profileBtn, textView, toolbar);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

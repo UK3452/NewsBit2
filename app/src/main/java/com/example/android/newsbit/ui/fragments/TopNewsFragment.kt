@@ -20,6 +20,7 @@ import com.example.android.newsbit.ui.MainActivity
 import com.example.android.newsbit.ui.NewsViewModel
 import com.example.android.newsbit.utils.Resource
 import com.google.android.material.snackbar.Snackbar
+import kotlinx.android.synthetic.main.activity_main.*
 
 
 class TopNewsFragment : Fragment(R.layout.fragment_top_news) {
@@ -52,6 +53,7 @@ class TopNewsFragment : Fragment(R.layout.fragment_top_news) {
         paginationProgressBarView = view.findViewById(R.id.paginationProgressBar)
 
         setupRecyclerView()
+
 
         newsAdapter.setOnItemClickListener {
             val bundle = Bundle().apply {

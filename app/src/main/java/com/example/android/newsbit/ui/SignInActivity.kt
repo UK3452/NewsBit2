@@ -16,6 +16,7 @@ import android.view.WindowInsetsController
 import android.view.WindowManager
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatDelegate
 import androidx.core.view.setPadding
 import com.example.android.newsbit.R
 import com.google.android.gms.auth.api.signin.GoogleSignIn
@@ -62,9 +63,9 @@ class SignInActivity : AppCompatActivity() {
                 WindowManager.LayoutParams.FLAG_FULLSCREEN
             )
         }
-
+        setTheme(R.style.Theme_NewsBit)
         super.onCreate(savedInstanceState)
-
+        AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
         if (restorePrefData()) {
             val i = Intent(applicationContext, MainActivity::class.java)
             startActivity(i)

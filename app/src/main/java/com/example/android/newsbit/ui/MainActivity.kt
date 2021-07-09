@@ -6,7 +6,9 @@ import android.content.SharedPreferences
 import android.os.Bundle
 import android.util.Log
 import android.view.View
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatDelegate
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.findNavController
 import androidx.navigation.ui.setupWithNavController
@@ -19,21 +21,23 @@ import com.google.android.gms.auth.api.signin.GoogleSignInOptions
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseUser
+import kotlinx.android.synthetic.main.activity_main.*
 
 
 class MainActivity : AppCompatActivity() {
 
     lateinit var viewModel: NewsViewModel
     private lateinit var mAuth: FirebaseAuth
-    lateinit var currentUser: FirebaseUser
+    private lateinit var currentUser: FirebaseUser
     private lateinit var googleSignInClient: GoogleSignInClient
-    val TAG = "Main Activity"
-    lateinit var sharedPreferences: SharedPreferences
+    private val TAG = "Main Activity"
+    private lateinit var sharedPreferences: SharedPreferences
     lateinit var phonenumber: String
 
     override fun onCreate(savedInstanceState: Bundle?) {
 
         super.onCreate(savedInstanceState)
+//        AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
         mAuth = FirebaseAuth.getInstance()
         if (mAuth.currentUser != null) {
             currentUser = mAuth.currentUser!!
@@ -42,16 +46,15 @@ class MainActivity : AppCompatActivity() {
         //CHECK IF THE USER SIGNED WITH PHONE NUMBER OR NOT
 
         if (mAuth.currentUser == null) {
-            Log.e("PhoneNumber", "Signed as" + sharedPreferences.getString("phonenumber", null))
-            if (restorePrefData()) {
-                getPhonePreference()
-            } else {
-                val i = Intent(applicationContext, SignInActivity::class.java)
-                startActivity(i)
-                finish()
-            }
+//            Log.e("PhoneNumber", "Signed as" + sharedPreferences.getString("phonenumber", null))
+            val i = Intent(applicationContext, SignInActivity::class.java)
+            startActivity(i)
+            finish()
         } else {
-            Log.e("CurrentUser", "Signed as" + currentUser.phoneNumber)
+            Log.e(
+                "CurrentUser",
+                "Signed as" + currentUser.phoneNumber + "  " + currentUser.displayName
+            )
         }
 
         val gso = GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
@@ -61,6 +64,9 @@ class MainActivity : AppCompatActivity() {
 
         googleSignInClient = GoogleSignIn.getClient(this, gso)
 
+//        Log.e("THEME NO RESTORE", themeName)
+
+
         /*
         The next 3 lines(where we are instantiating viewModel) work only
         if we write them before setContentView(R.layout.activity_main).
@@ -68,6 +74,8 @@ class MainActivity : AppCompatActivity() {
         because in phillip lackner course it works fine if we write these lines after
         setContentView(R.layout.activity_main) line
          */
+
+
         val newsRepository = NewsRepository(ArticleDatabase(this))
         val viewModelProviderFactory = NewsViewModelProviderFactory(newsRepository)
         viewModel = ViewModelProvider(this, viewModelProviderFactory).get(NewsViewModel::class.java)
@@ -75,14 +83,10 @@ class MainActivity : AppCompatActivity() {
         setTheme(R.style.Theme_NewsBit)
         setContentView(R.layout.activity_main)
 
-        /* Log.e(TAG, "\n\n Ho to raha hai yaar \n\n")*/
-
-
-
         if (this::viewModel.isInitialized) {
-            Log.e(TAG, " Ho to raha hai yaar ")
+//            Log.e(TAG, " Ho to raha hai yaar ")
         } else {
-            Log.e(TAG, "Abhi nahi yaar ")
+//            Log.e(TAG, "Abhi nahi yaar ")
         }
 
         val navController = findNavController(R.id.newsNavHostFragment)
@@ -95,24 +99,15 @@ class MainActivity : AppCompatActivity() {
                 else -> bottomNavigationView.visibility = View.VISIBLE
             }
         }
-    }
-    private fun signOut() {
-        // Firebase sign out
-        mAuth.signOut()
-        // Google sign out
-        if (googleSignInClient != null) {
-            googleSignInClient.signOut()
+
+        profileBtn.setOnClickListener {
+            navController.navigate(R.id.settingsFragment)
         }
     }
-
-    private fun restorePrefData(): Boolean {
-        sharedPreferences = applicationContext.getSharedPreferences("pref", Context.MODE_PRIVATE)
-        return sharedPreferences!!.getBoolean("verified", false)
-    }
-
-    private fun getPhonePreference() {
-        sharedPreferences = applicationContext.getSharedPreferences("pref", Context.MODE_PRIVATE)
-        phonenumber = sharedPreferences!!.getString("phonenumber", null)!!
-//        Toast.makeText(this,"Signed as"+phonenumber,Toast.LENGTH_SHORT).show()
+    fun logOut(){
+        Toast.makeText(this, "Logged Out Successfully!!", Toast.LENGTH_LONG).show()
+        val intent = Intent(this, SignInActivity::class.java)
+        startActivity(intent)
+        finish()
     }
 }

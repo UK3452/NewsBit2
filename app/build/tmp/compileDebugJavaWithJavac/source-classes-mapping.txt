@@ -31,6 +31,8 @@ com/example/android/newsbit/databinding/FragmentSourceNewsBinding.java
  com.example.android.newsbit.databinding.FragmentSourceNewsBinding
 com/example/android/newsbit/databinding/ActivityMainBinding.java
  com.example.android.newsbit.databinding.ActivityMainBinding
+com/example/android/newsbit/databinding/FragmentSettingsBinding.java
+ com.example.android.newsbit.databinding.FragmentSettingsBinding
 com/example/android/newsbit/db/ArticleDatabase_Impl.java
  com.example.android.newsbit.db.ArticleDatabase_Impl
  com.example.android.newsbit.db.ArticleDatabase_Impl$1
