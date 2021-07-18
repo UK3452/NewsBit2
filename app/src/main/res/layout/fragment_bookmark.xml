@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ui.fragments.BookmarkFragment"
-    android:background="?attr/colorOnSecondary">
+    android:background="?attr/colorSecondary">
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/bookmarkedNewsItemView"
@@ -22,7 +22,7 @@
         android:id="@+id/bookmark_notfound"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="?attr/colorOnSecondary"
+        android:background="?attr/colorSecondary"
         android:visibility="gone"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

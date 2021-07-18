@@ -15,21 +15,19 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="@drawable/flag_transparent">
-
-            <androidx.constraintlayout.widget.ConstraintLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:padding="5dp">
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:background="@drawable/flag_transparent"
+            android:orientation="horizontal">
 
                 <SearchView
                     android:id="@+id/search_view"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_margin="10dp"
+                    android:layout_margin="5dp"
                     android:layout_marginBottom="10dp"
-                    android:background="@drawable/button_bg"
+                    android:padding="10dp"
+                    android:background="@drawable/search_view"
                     android:iconifiedByDefault="false"
                     android:elevation="5dp"
                     android:queryHint="Search..."
@@ -37,13 +35,15 @@
                     android:scrollbars="none"
                     app:layout_constraintLeft_toLeftOf="parent"
                     app:layout_constraintRight_toRightOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"/>
+                    app:layout_constraintTop_toTopOf="parent">
+
+                </SearchView>
 
                 <androidx.recyclerview.widget.RecyclerView
                     android:id="@+id/searchItemView"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_margin="10dp"
+                    android:layout_margin="30dp"
                     android:visibility="gone"
                     app:layout_constraintLeft_toLeftOf="parent"
                     app:layout_constraintRight_toRightOf="parent"
@@ -57,14 +57,13 @@
                     android:layout_marginTop="50dp"
                     android:elevation="10dp"
                     android:indeterminate="true"
-                    android:indeterminateTint="@color/colorPrimary"
+                    android:indeterminateTint="#0485BF"
                     android:background="@android:color/transparent"
                     android:visibility="gone"
                     app:layout_constraintTop_toTopOf="@id/search_view"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent" />
 
-            </androidx.constraintlayout.widget.ConstraintLayout>
         </LinearLayout>
 
         <LinearLayout
@@ -76,7 +75,7 @@
             <com.google.android.material.card.MaterialCardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                app:cardBackgroundColor="?attr/colorOnSecondary"
+                app:cardBackgroundColor="#FFFFFF"
                 app:cardCornerRadius="20dp"
                 android:layout_margin="10dp">
 
@@ -92,7 +91,7 @@
                         android:layout_marginLeft="15dp"
                         android:layout_marginTop="10dp"
                         android:layout_marginBottom="10dp"
-                        android:textColor="@color/colorPrimary"
+                        android:textColor="#0485BF"
                         android:text="Category"
                         android:textSize="20sp" />
 

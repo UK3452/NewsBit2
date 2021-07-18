@@ -1,26 +1,26 @@
 package com.example.android.newsbit.ui.fragments
 
 import android.content.Context
-import android.content.Intent
+import android.content.SharedPreferences
 import android.os.Bundle
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Toast
+import android.widget.LinearLayout
 import androidx.annotation.Nullable
 import androidx.appcompat.app.AppCompatDelegate
 import androidx.appcompat.widget.SwitchCompat
+import androidx.core.view.isVisible
 import androidx.fragment.app.Fragment
 import com.bumptech.glide.Glide
 import com.example.android.newsbit.R
-import com.example.android.newsbit.ui.SignInActivity
 import com.example.android.newsbit.ui.MainActivity
 import com.google.android.gms.auth.api.signin.GoogleSignIn
 import com.google.android.gms.auth.api.signin.GoogleSignInClient
 import com.google.android.gms.auth.api.signin.GoogleSignInOptions
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseUser
+import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.fragment_settings.*
 
 
@@ -30,9 +30,11 @@ class SettingsFragment : Fragment() {
     private lateinit var currentUser: FirebaseUser
     private lateinit var googleSignInClient: GoogleSignInClient
     private lateinit var mainActivity: MainActivity
-    private var theme : Int = 0
 
+    private var isNight : Boolean = false
     lateinit var switchButton: SwitchCompat
+
+    lateinit var sharedPreferences: SharedPreferences
 
     override fun onCreate(@Nullable savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -54,9 +56,28 @@ class SettingsFragment : Fragment() {
 
         switchButton=view.findViewById(R.id.switch1)
 
+        if (restorePrefData()) {
+            switchButton.isChecked = true
+        }
+        else{
+            switchButton.isChecked = false
+        }
+
         switchButton.setOnCheckedChangeListener({ _ , isChecked ->
-            if (isChecked) AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES)
-            else  AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
+            if (isChecked) {
+                if(!restorePrefData()){
+                    AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES)
+                    savePrefData(true)
+                    isNight = restorePrefData()
+                }
+            }
+            else {
+                if (restorePrefData()){
+                    AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
+                    savePrefData(false)
+                    isNight = restorePrefData()
+                }
+            }
         })
 
         val gso = GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
@@ -131,4 +152,19 @@ class SettingsFragment : Fragment() {
 //        val sharedPreferences = requireActivity().getSharedPreferences("pref", Context.MODE_PRIVATE)
 //        return sharedPreferences.getString("theme", "default")!!
 //    }
+
+    private fun savePrefData(b: Boolean) {
+
+        sharedPreferences = requireActivity().getSharedPreferences("theme", Context.MODE_PRIVATE)
+        val editor = sharedPreferences!!.edit()
+        editor.putBoolean("isNight", b)
+//        editor.putString("theme","default")
+        editor.apply()
+    }
+
+    private fun restorePrefData(): Boolean {
+        sharedPreferences = requireActivity().getSharedPreferences("theme", Context.MODE_PRIVATE)
+        return sharedPreferences!!.getBoolean("isNight", false)
+
+    }
 }

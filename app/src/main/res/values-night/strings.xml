@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="default_web_client_id">296181411352-j4mlmj94sqc8cnohud69piknmci4198u.apps.googleusercontent.com</string>
     <string name="profile">profile</string>
     <string name="home">Home</string>
     <string name="explore">Explore</string>

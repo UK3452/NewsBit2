@@ -7,7 +7,9 @@ import androidx.fragment.app.Fragment
 import android.view.View
 import android.view.ViewGroup
 import android.widget.AbsListView
+import android.widget.LinearLayout
 import android.widget.ProgressBar
+import androidx.core.view.isVisible
 import androidx.lifecycle.Observer
 import androidx.navigation.fragment.findNavController
 import androidx.navigation.fragment.navArgs
@@ -20,6 +22,7 @@ import com.example.android.newsbit.ui.MainActivity
 import com.example.android.newsbit.ui.NewsViewModel
 import com.example.android.newsbit.utils.Resource
 import com.google.android.material.snackbar.Snackbar
+import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.coroutines.delay
 import java.util.*
 
@@ -54,6 +57,7 @@ class CategoryNewsFragment : Fragment(R.layout.fragment_category_news) {
 
         category = categoryArgs.categoryName
         isCustomCategory = categoryArgs.isCustomCategory
+
 
         Log.e(TAG,from)
 
@@ -113,8 +117,15 @@ class CategoryNewsFragment : Fragment(R.layout.fragment_category_news) {
                     hideProgressBar()
                     it.data?.let { categoryNewsResponse ->
                         /*Log.e(TAG, categoryNewsResponse.articles.size.toString())*/
-                        categoryNewsAdapter.differ.submitList(categoryNewsResponse.articles.toList())
-                        totalResults = categoryNewsResponse.totalResults
+//                        categoryNewsAdapter.differ.submitList(categoryNewsResponse.articles.toList())
+//                        totalResults = categoryNewsResponse.totalResults
+                        if(!categoryNewsResponse.articles.isNullOrEmpty()){
+                            categoryNewsAdapter.differ.submitList(categoryNewsResponse.articles.toList())
+                            totalResults = categoryNewsResponse.totalResults
+                        }
+                        else{
+                            findNavController().navigate(R.id.action_categoryNewsFragment_to_noResponseFragment)
+                        }
                     }
                 }
                 is Resource.Error -> {
@@ -136,9 +147,6 @@ class CategoryNewsFragment : Fragment(R.layout.fragment_category_news) {
         })
 
         categoryNewsAdapter.setOnBookmarkClickListener {
-            //TODO: find out how to write code to prevent duplicate entry
-
-
             //it refers to Article
 
             var alreadySaved  = false

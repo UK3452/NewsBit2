@@ -31,6 +31,7 @@ class ViewPagerAdapter(private var context:Context
         val title:TextView
         val desc:TextView
 
+
         imageView = view.findViewById(R.id.imageView)
         title = view.findViewById(R.id.title_screen)
         desc = view.findViewById(R.id.desc_screen)

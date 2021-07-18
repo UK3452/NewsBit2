@@ -4,7 +4,9 @@ import android.os.Bundle
 import android.util.Log
 import android.view.View
 import android.widget.AbsListView
+import android.widget.LinearLayout
 import android.widget.ProgressBar
+import androidx.core.view.isVisible
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.navigation.fragment.findNavController
@@ -18,6 +20,7 @@ import com.example.android.newsbit.ui.MainActivity
 import com.example.android.newsbit.ui.NewsViewModel
 import com.example.android.newsbit.utils.Resource
 import com.google.android.material.snackbar.Snackbar
+import kotlinx.android.synthetic.main.activity_main.*
 import java.util.*
 
 
@@ -27,6 +30,7 @@ class SourceNewsFragment : Fragment(R.layout.fragment_source_news) {
     lateinit var sourceNewsAdapter: NewsAdapter
     lateinit var sourceNewsItemView: RecyclerView
     lateinit var paginationProgressBarView: ProgressBar
+
     var totalResults = 0 // totalResults will be received in news response later
     var isLoading = false
     var isScrolling = false
@@ -72,8 +76,16 @@ class SourceNewsFragment : Fragment(R.layout.fragment_source_news) {
                     hideProgressBar()
                     it.data?.let { sourceNewsResponse ->
 
-                        sourceNewsAdapter.differ.submitList(sourceNewsResponse.articles.toList())
-                        totalResults = sourceNewsResponse.totalResults
+//                        sourceNewsAdapter.differ.submitList(sourceNewsResponse.articles.toList())
+//                        totalResults = sourceNewsResponse.totalResults
+                        if(!sourceNewsResponse.articles.isNullOrEmpty()){
+                            sourceNewsAdapter.differ.submitList(sourceNewsResponse.articles.toList())
+                            totalResults = sourceNewsResponse.totalResults
+
+                        }
+                        else{
+                            findNavController().navigate(R.id.action_sourceNewsFragment_to_noResponseFragment)
+                        }
                     }
                 }
                 is Resource.Error -> {

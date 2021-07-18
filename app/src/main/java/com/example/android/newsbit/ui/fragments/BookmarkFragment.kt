@@ -5,7 +5,9 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.LinearLayout
 import androidx.constraintlayout.widget.ConstraintLayout
+import androidx.core.view.isVisible
 import androidx.lifecycle.Observer
 import com.example.android.newsbit.R
 import com.example.android.newsbit.adapters.NewsAdapter
@@ -22,7 +24,9 @@ class BookmarkFragment : Fragment(R.layout.fragment_bookmark) {
     lateinit var viewModel: NewsViewModel
     lateinit var newsAdapter: NewsAdapter
     lateinit var bookmarkedNewsItemView: RecyclerView
+
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+
         super.onViewCreated(view, savedInstanceState)
         viewModel = (activity as MainActivity).viewModel
         bookmarkedNewsItemView = view.findViewById(R.id.bookmarkedNewsItemView)

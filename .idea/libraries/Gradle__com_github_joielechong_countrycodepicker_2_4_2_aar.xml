@@ -1,9 +1,9 @@
 <component name="libraryTable">
   <library name="Gradle: com.github.joielechong:countrycodepicker:2.4.2@aar">
     <CLASSES>
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/e20c3ba2e49a0a39b78f417c0a4f670a/countrycodepicker-2.4.2/res" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/e20c3ba2e49a0a39b78f417c0a4f670a/countrycodepicker-2.4.2/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/e20c3ba2e49a0a39b78f417c0a4f670a/countrycodepicker-2.4.2/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/108e12ca395b2504e15676fc831acd4d/countrycodepicker-2.4.2/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/108e12ca395b2504e15676fc831acd4d/countrycodepicker-2.4.2/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/108e12ca395b2504e15676fc831acd4d/countrycodepicker-2.4.2/res" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

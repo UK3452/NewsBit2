@@ -7,11 +7,11 @@
         <item name="colorPrimaryVariant">@color/colorPrimary</item>
         <item name="colorOnPrimary">@color/colorOnPrimary</item>
         <!-- Secondary brand color. -->
-        <item name="colorSecondary">#3C3D3F</item>
+        <item name="colorSecondary">#444444</item>
         <item name="colorSecondaryVariant">#FFFFFF</item>
-        <item name="colorOnSecondary">#494949</item>
+        <item name="colorOnSecondary">#878683</item>
         <!-- Status bar color. -->
-        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorSecondaryVariant</item>
         <item name="android:windowLightStatusBar">true</item>
         <!-- Customize your theme here. -->
         <item name="android:editTextColor">@color/colorPrimary</item>
@@ -23,7 +23,7 @@
         <item name="android:windowBackground">@drawable/splash_image</item>
         <item name="android:statusBarColor" tools:targetApi="l">@color/white</item>
         <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorSecondary">#3C3D3F</item>
+        <item name="colorSecondary">#F8F8F8</item>
     </style>
 
 </resources>

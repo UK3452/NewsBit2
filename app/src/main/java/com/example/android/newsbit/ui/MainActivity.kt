@@ -36,6 +36,13 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
 
+        if (restorePrefData()){
+            AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES)
+        }
+        else{
+            AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
+        }
+
         super.onCreate(savedInstanceState)
 //        AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
         mAuth = FirebaseAuth.getInstance()
@@ -109,5 +116,19 @@ class MainActivity : AppCompatActivity() {
         val intent = Intent(this, SignInActivity::class.java)
         startActivity(intent)
         finish()
+    }
+    private fun savePrefData(b: Boolean) {
+
+        sharedPreferences = applicationContext.getSharedPreferences("theme", Context.MODE_PRIVATE)
+        val editor = sharedPreferences!!.edit()
+        editor.putBoolean("isNight", b)
+//        editor.putString("theme","default")
+        editor.apply()
+    }
+
+    private fun restorePrefData(): Boolean {
+        sharedPreferences = applicationContext.getSharedPreferences("theme", Context.MODE_PRIVATE)
+        return sharedPreferences!!.getBoolean("isNight", false)
+
     }
 }

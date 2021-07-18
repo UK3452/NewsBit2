@@ -10,6 +10,7 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.viewbinding.ViewBinding;
 import com.example.android.newsbit.R;
+import com.github.curioustechizen.ago.RelativeTimeTextView;
 import com.google.android.material.button.MaterialButton;
 import com.google.android.material.card.MaterialCardView;
 import java.lang.NullPointerException;
@@ -36,14 +37,15 @@ public final class ItemNewsBinding implements ViewBinding {
   public final TextView sourceName;
 
   @NonNull
-  public final TextView timestamp;
+  public final RelativeTimeTextView timestamp;
 
   @NonNull
   public final TextView title;
 
   private ItemNewsBinding(@NonNull MaterialCardView rootView, @NonNull MaterialButton button,
       @NonNull TextView description, @NonNull ImageView image, @NonNull MaterialButton shareButton,
-      @NonNull TextView sourceName, @NonNull TextView timestamp, @NonNull TextView title) {
+      @NonNull TextView sourceName, @NonNull RelativeTimeTextView timestamp,
+      @NonNull TextView title) {
     this.rootView = rootView;
     this.button = button;
     this.description = description;
@@ -112,7 +114,7 @@ public final class ItemNewsBinding implements ViewBinding {
       }
 
       id = R.id.timestamp;
-      TextView timestamp = rootView.findViewById(id);
+      RelativeTimeTextView timestamp = rootView.findViewById(id);
       if (timestamp == null) {
         break missingId;
       }

@@ -4,6 +4,7 @@ import android.os.Bundle
 import android.util.Log
 import android.view.View
 import android.widget.AbsListView
+import android.widget.LinearLayout
 import android.widget.ProgressBar
 import android.widget.Toast
 import androidx.activity.OnBackPressedCallback
@@ -21,6 +22,7 @@ import com.example.android.newsbit.ui.NewsViewModel
 import com.example.android.newsbit.utils.Resource
 import com.google.android.material.snackbar.Snackbar
 import kotlinx.android.synthetic.main.activity_main.*
+import kotlinx.android.synthetic.main.fragment_search.*
 
 
 class TopNewsFragment : Fragment(R.layout.fragment_top_news) {
@@ -39,6 +41,13 @@ class TopNewsFragment : Fragment(R.layout.fragment_top_news) {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+        var no_responseBg = view?.findViewById<LinearLayout>(R.id.no_Result)
+        if (no_responseBg != null) {
+            if(no_responseBg.isVisible){
+                no_responseBg.visibility = View.GONE
+            }
+        }
+
         viewModel = (activity as MainActivity).viewModel
         
         /*if (this::fragViewModel.isInitialized) {
@@ -46,7 +55,6 @@ class TopNewsFragment : Fragment(R.layout.fragment_top_news) {
         } else {
             Log.e(TAG, " Abhi nahi yaar ")
         }*/
-
         newsItemView = view.findViewById(R.id.newsItemView)
         paginationProgressBarView = view.findViewById(R.id.paginationProgressBar)
 
@@ -109,8 +117,16 @@ class TopNewsFragment : Fragment(R.layout.fragment_top_news) {
                         /*Convert mutable list to normal list newsResponse.articles.toList()
                         & then submit */
                         Log.e(TAG, newsResponse.articles[0].title)
-                        newsAdapter.differ.submitList(newsResponse.articles.toList())
-                        totalResults=newsResponse.totalResults
+//                        newsAdapter.differ.submitList(newsResponse.articles.toList())
+//                        totalResults=newsResponse.totalResults
+
+                        if(!newsResponse.articles.isNullOrEmpty()){
+                            newsAdapter.differ.submitList(newsResponse.articles.toList())
+                            totalResults = newsResponse.totalResults
+                        }
+                        else{
+                            findNavController().navigate(R.id.action_topNewsFragment_to_noResponseFragment)
+                        }
                     }
                 }
                 is Resource.Error -> {

@@ -16,10 +16,6 @@
         "source": "C:\\Users\\Shivam\\Desktop\\NewsBit-master\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\ic_launcher_foreground.png"
     },
     {
-        "merged": "C:\\Users\\Shivam\\Desktop\\NewsBit-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_news_logo1.jpg.flat",
-        "source": "C:\\Users\\Shivam\\Desktop\\NewsBit-master\\app\\src\\main\\res\\drawable-v24\\news_logo1.jpg"
-    },
-    {
         "merged": "C:\\Users\\Shivam\\Desktop\\NewsBit-master\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_newsbit_launcher_round.png.flat",
         "source": "C:\\Users\\Shivam\\Desktop\\NewsBit-master\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_newsbit_launcher_round.png"
     },
@@ -28,24 +24,12 @@
         "source": "C:\\Users\\Shivam\\Desktop\\NewsBit-master\\app\\src\\main\\res\\mipmap-mdpi\\ic_newsbit_launcher_foreground.png"
     },
     {
-        "merged": "C:\\Users\\Shivam\\Desktop\\NewsBit-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_technology.png.flat",
-        "source": "C:\\Users\\Shivam\\Desktop\\NewsBit-master\\app\\src\\main\\res\\drawable-v24\\technology.png"
-    },
-    {
-        "merged": "C:\\Users\\Shivam\\Desktop\\NewsBit-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_health.png.flat",
-        "source": "C:\\Users\\Shivam\\Desktop\\NewsBit-master\\app\\src\\main\\res\\drawable-v24\\health.png"
-    },
-    {
         "merged": "C:\\Users\\Shivam\\Desktop\\NewsBit-master\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_newsbit_launcher_foreground.png.flat",
         "source": "C:\\Users\\Shivam\\Desktop\\NewsBit-master\\app\\src\\main\\res\\mipmap-xhdpi\\ic_newsbit_launcher_foreground.png"
     },
     {
         "merged": "C:\\Users\\Shivam\\Desktop\\NewsBit-master\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_on_board_screens.xml.flat",
         "source": "C:\\Users\\Shivam\\Desktop\\NewsBit-master\\app\\src\\main\\res\\layout\\activity_on_board_screens.xml"
-    },
-    {
-        "merged": "C:\\Users\\Shivam\\Desktop\\NewsBit-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_entertainment.png.flat",
-        "source": "C:\\Users\\Shivam\\Desktop\\NewsBit-master\\app\\src\\main\\res\\drawable-v24\\entertainment.png"
     },
     {
         "merged": "C:\\Users\\Shivam\\Desktop\\NewsBit-master\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_bookmark.xml.flat",
@@ -60,16 +44,16 @@
         "source": "C:\\Users\\Shivam\\Desktop\\NewsBit-master\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
     },
     {
+        "merged": "C:\\Users\\Shivam\\Desktop\\NewsBit-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_not_found.png.flat",
+        "source": "C:\\Users\\Shivam\\Desktop\\NewsBit-master\\app\\src\\main\\res\\drawable-v24\\not_found.png"
+    },
+    {
         "merged": "C:\\Users\\Shivam\\Desktop\\NewsBit-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_search.xml.flat",
         "source": "C:\\Users\\Shivam\\Desktop\\NewsBit-master\\app\\src\\main\\res\\drawable\\ic_search.xml"
     },
     {
         "merged": "C:\\Users\\Shivam\\Desktop\\NewsBit-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_outline_share_24.xml.flat",
         "source": "C:\\Users\\Shivam\\Desktop\\NewsBit-master\\app\\src\\main\\res\\drawable\\ic_outline_share_24.xml"
-    },
-    {
-        "merged": "C:\\Users\\Shivam\\Desktop\\NewsBit-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_journalist.png.flat",
-        "source": "C:\\Users\\Shivam\\Desktop\\NewsBit-master\\app\\src\\main\\res\\drawable-v24\\journalist.png"
     },
     {
         "merged": "C:\\Users\\Shivam\\Desktop\\NewsBit-master\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_explore.xml.flat",
@@ -94,10 +78,6 @@
     {
         "merged": "C:\\Users\\Shivam\\Desktop\\NewsBit-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable_unselected.xml.flat",
         "source": "C:\\Users\\Shivam\\Desktop\\NewsBit-master\\app\\src\\main\\res\\drawable\\unselected.xml"
-    },
-    {
-        "merged": "C:\\Users\\Shivam\\Desktop\\NewsBit-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_techno_icon.jpg.flat",
-        "source": "C:\\Users\\Shivam\\Desktop\\NewsBit-master\\app\\src\\main\\res\\drawable-v24\\techno_icon.jpg"
     },
     {
         "merged": "C:\\Users\\Shivam\\Desktop\\NewsBit-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_p.png.flat",
@@ -160,10 +140,6 @@
         "source": "C:\\Users\\Shivam\\Desktop\\NewsBit-master\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_round.png"
     },
     {
-        "merged": "C:\\Users\\Shivam\\Desktop\\NewsBit-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_business.png.flat",
-        "source": "C:\\Users\\Shivam\\Desktop\\NewsBit-master\\app\\src\\main\\res\\drawable-v24\\business.png"
-    },
-    {
         "merged": "C:\\Users\\Shivam\\Desktop\\NewsBit-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_hospital.png.flat",
         "source": "C:\\Users\\Shivam\\Desktop\\NewsBit-master\\app\\src\\main\\res\\drawable-v24\\hospital.png"
     },
@@ -200,24 +176,28 @@
         "source": "C:\\Users\\Shivam\\Desktop\\NewsBit-master\\app\\src\\main\\res\\mipmap-hdpi\\ic_newsbit_launcher_round.png"
     },
     {
+        "merged": "C:\\Users\\Shivam\\Desktop\\NewsBit-master\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_no_response.xml.flat",
+        "source": "C:\\Users\\Shivam\\Desktop\\NewsBit-master\\app\\src\\main\\res\\layout\\fragment_no_response.xml"
+    },
+    {
         "merged": "C:\\Users\\Shivam\\Desktop\\NewsBit-master\\app\\build\\intermediates\\res\\merged\\debug\\menu_app_bar_menu.xml.flat",
         "source": "C:\\Users\\Shivam\\Desktop\\NewsBit-master\\app\\src\\main\\res\\menu\\app_bar_menu.xml"
+    },
+    {
+        "merged": "C:\\Users\\Shivam\\Desktop\\NewsBit-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_newsbit1.png.flat",
+        "source": "C:\\Users\\Shivam\\Desktop\\NewsBit-master\\app\\src\\main\\res\\drawable-v24\\newsbit1.png"
     },
     {
         "merged": "C:\\Users\\Shivam\\Desktop\\NewsBit-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_newsbit.png.flat",
         "source": "C:\\Users\\Shivam\\Desktop\\NewsBit-master\\app\\src\\main\\res\\drawable-v24\\newsbit.png"
     },
     {
-        "merged": "C:\\Users\\Shivam\\Desktop\\NewsBit-master\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_newsbit_launcher.png.flat",
-        "source": "C:\\Users\\Shivam\\Desktop\\NewsBit-master\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_newsbit_launcher.png"
-    },
-    {
         "merged": "C:\\Users\\Shivam\\Desktop\\NewsBit-master\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_source_news.xml.flat",
         "source": "C:\\Users\\Shivam\\Desktop\\NewsBit-master\\app\\src\\main\\res\\layout\\fragment_source_news.xml"
     },
     {
-        "merged": "C:\\Users\\Shivam\\Desktop\\NewsBit-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_covid.jpg.flat",
-        "source": "C:\\Users\\Shivam\\Desktop\\NewsBit-master\\app\\src\\main\\res\\drawable-v24\\covid.jpg"
+        "merged": "C:\\Users\\Shivam\\Desktop\\NewsBit-master\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_newsbit_launcher.png.flat",
+        "source": "C:\\Users\\Shivam\\Desktop\\NewsBit-master\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_newsbit_launcher.png"
     },
     {
         "merged": "C:\\Users\\Shivam\\Desktop\\NewsBit-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_satellite.png.flat",
@@ -248,16 +228,8 @@
         "source": "C:\\Users\\Shivam\\Desktop\\NewsBit-master\\app\\src\\main\\res\\drawable-v24\\techcrunch.png"
     },
     {
-        "merged": "C:\\Users\\Shivam\\Desktop\\NewsBit-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_international.jpg.flat",
-        "source": "C:\\Users\\Shivam\\Desktop\\NewsBit-master\\app\\src\\main\\res\\drawable-v24\\international.jpg"
-    },
-    {
         "merged": "C:\\Users\\Shivam\\Desktop\\NewsBit-master\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_newsbit_launcher_foreground.png.flat",
         "source": "C:\\Users\\Shivam\\Desktop\\NewsBit-master\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_newsbit_launcher_foreground.png"
-    },
-    {
-        "merged": "C:\\Users\\Shivam\\Desktop\\NewsBit-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_not_found.jpg.flat",
-        "source": "C:\\Users\\Shivam\\Desktop\\NewsBit-master\\app\\src\\main\\res\\drawable-v24\\not_found.jpg"
     },
     {
         "merged": "C:\\Users\\Shivam\\Desktop\\NewsBit-master\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_newsbit_launcher.xml.flat",
@@ -286,6 +258,10 @@
     {
         "merged": "C:\\Users\\Shivam\\Desktop\\NewsBit-master\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_top_news.xml.flat",
         "source": "C:\\Users\\Shivam\\Desktop\\NewsBit-master\\app\\src\\main\\res\\layout\\fragment_top_news.xml"
+    },
+    {
+        "merged": "C:\\Users\\Shivam\\Desktop\\NewsBit-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_crypto.png.flat",
+        "source": "C:\\Users\\Shivam\\Desktop\\NewsBit-master\\app\\src\\main\\res\\drawable-v24\\crypto.png"
     },
     {
         "merged": "C:\\Users\\Shivam\\Desktop\\NewsBit-master\\app\\build\\intermediates\\res\\merged\\debug\\navigation_news_nav_graph.xml.flat",
@@ -340,6 +316,10 @@
         "source": "C:\\Users\\Shivam\\Desktop\\NewsBit-master\\app\\src\\main\\res\\drawable\\search_view.xml"
     },
     {
+        "merged": "C:\\Users\\Shivam\\Desktop\\NewsBit-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_tr.png.flat",
+        "source": "C:\\Users\\Shivam\\Desktop\\NewsBit-master\\app\\src\\main\\res\\drawable-v24\\tr.png"
+    },
+    {
         "merged": "C:\\Users\\Shivam\\Desktop\\NewsBit-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi_ic_launcher_foreground.png.flat",
         "source": "C:\\Users\\Shivam\\Desktop\\NewsBit-master\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\ic_launcher_foreground.png"
     },
@@ -360,6 +340,10 @@
         "source": "C:\\Users\\Shivam\\Desktop\\NewsBit-master\\app\\src\\main\\res\\drawable\\corona.png"
     },
     {
+        "merged": "C:\\Users\\Shivam\\Desktop\\NewsBit-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_no_bookmark1.png.flat",
+        "source": "C:\\Users\\Shivam\\Desktop\\NewsBit-master\\app\\src\\main\\res\\drawable-v24\\no_bookmark1.png"
+    },
+    {
         "merged": "C:\\Users\\Shivam\\Desktop\\NewsBit-master\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_category_news.xml.flat",
         "source": "C:\\Users\\Shivam\\Desktop\\NewsBit-master\\app\\src\\main\\res\\layout\\fragment_category_news.xml"
     },
@@ -372,8 +356,16 @@
         "source": "C:\\Users\\Shivam\\Desktop\\NewsBit-master\\app\\src\\main\\res\\drawable-v24\\bookmark_icon.png"
     },
     {
+        "merged": "C:\\Users\\Shivam\\Desktop\\NewsBit-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable_corona1.png.flat",
+        "source": "C:\\Users\\Shivam\\Desktop\\NewsBit-master\\app\\src\\main\\res\\drawable\\corona1.png"
+    },
+    {
         "merged": "C:\\Users\\Shivam\\Desktop\\NewsBit-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_news_app_icon.png.flat",
         "source": "C:\\Users\\Shivam\\Desktop\\NewsBit-master\\app\\src\\main\\res\\drawable-v24\\news_app_icon.png"
+    },
+    {
+        "merged": "C:\\Users\\Shivam\\Desktop\\NewsBit-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_not_found1.jpg.flat",
+        "source": "C:\\Users\\Shivam\\Desktop\\NewsBit-master\\app\\src\\main\\res\\drawable-v24\\not_found1.jpg"
     },
     {
         "merged": "C:\\Users\\Shivam\\Desktop\\NewsBit-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_google.png.flat",
@@ -408,10 +400,6 @@
         "source": "C:\\Users\\Shivam\\Desktop\\NewsBit-master\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
     },
     {
-        "merged": "C:\\Users\\Shivam\\Desktop\\NewsBit-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_worldwide.png.flat",
-        "source": "C:\\Users\\Shivam\\Desktop\\NewsBit-master\\app\\src\\main\\res\\drawable-v24\\worldwide.png"
-    },
-    {
         "merged": "C:\\Users\\Shivam\\Desktop\\NewsBit-master\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher_round.png.flat",
         "source": "C:\\Users\\Shivam\\Desktop\\NewsBit-master\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_round.png"
     },
@@ -422,14 +410,6 @@
     {
         "merged": "C:\\Users\\Shivam\\Desktop\\NewsBit-master\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_sign_in.xml.flat",
         "source": "C:\\Users\\Shivam\\Desktop\\NewsBit-master\\app\\src\\main\\res\\layout\\activity_sign_in.xml"
-    },
-    {
-        "merged": "C:\\Users\\Shivam\\Desktop\\NewsBit-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_politics.png.flat",
-        "source": "C:\\Users\\Shivam\\Desktop\\NewsBit-master\\app\\src\\main\\res\\drawable-v24\\politics.png"
-    },
-    {
-        "merged": "C:\\Users\\Shivam\\Desktop\\NewsBit-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_tr.jpg.flat",
-        "source": "C:\\Users\\Shivam\\Desktop\\NewsBit-master\\app\\src\\main\\res\\drawable-v24\\tr.jpg"
     },
     {
         "merged": "C:\\Users\\Shivam\\Desktop\\NewsBit-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_account_box.xml.flat",
